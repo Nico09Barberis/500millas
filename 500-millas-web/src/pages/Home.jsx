@@ -5,6 +5,8 @@ import imgHome2 from "../assets/images/img-home-2.jpg";
 import FormSection from "../sections/FormSection";
 import FeatureSection from "../sections/FeatureSection";
 import WhatsAppButton from "../components/common/WhatsAppButton";
+import ContactSection from "../sections/ContactSection";
+import ParallaxSection from "../sections/ParallaxSection";
 
 
 function Home() {
@@ -27,6 +29,10 @@ function Home() {
         <FeatureSection />
 
         <FormSection />
+
+        <ContactSection />
+
+        <ParallaxSection />
 
         <WhatsAppButton />
       </div>
