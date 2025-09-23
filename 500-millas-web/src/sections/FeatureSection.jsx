@@ -2,7 +2,7 @@ import featureImg from "../assets/images/imgFormSection.png"; // reemplazá con 
 
 const FeatureSection = () => {
   return (
-    <section className="w-full max-w-4xl mx-auto my-12 p-4 bg-gray-300">
+    <section className="w-full max-w-4xl mx-auto my-12 bg-gray-300">
       <div className="flex flex-col md:flex-row items-center gap-8">
         {/* Imagen */}
         <div className="md:w-1/2 w-full">

@@ -7,13 +7,15 @@ import FeatureSection from "../sections/FeatureSection";
 import WhatsAppButton from "../components/common/WhatsAppButton";
 import ContactSection from "../sections/ContactSection";
 import ParallaxSection from "../sections/ParallaxSection";
+import ProductsSection from "../sections/ProductsSection";
+import BuySections from "../sections/BuySections";
 
 
 function Home() {
   const images = [ imgHome1, imgHome2 ];
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-50 p-6">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-white">
       <h1 className="text-4xl font-bold text-gray-800 mb-4">
         ¡Bienvenido a Mi Empresa!
       </h1>
@@ -30,9 +32,14 @@ function Home() {
 
         <FormSection />
 
-        <ContactSection />
 
         <ParallaxSection />
+
+        <ProductsSection />
+
+        <BuySections />
+
+        <ContactSection />
 
         <WhatsAppButton />
       </div>
