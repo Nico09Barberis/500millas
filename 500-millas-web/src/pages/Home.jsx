@@ -2,6 +2,7 @@ import ImageCarousel from "../components/common/ImageCarousel";
 
 import imgHome1 from "../assets/images/img-home-1.jpg";
 import imgHome2 from "../assets/images/img-home-2.jpg";
+import FormSection from "../sections/FormSection";
 
 
 function Home() {
@@ -20,6 +21,8 @@ function Home() {
         {" "}
         {/* margin-top para no tapar la navbar fija */}
         <ImageCarousel images={images} />
+
+        <FormSection />
       </div>
     </div>
   );

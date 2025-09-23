@@ -15,7 +15,7 @@ function ImageCarousel({ images, interval = 3000 }) {
   }, [images.length, interval]);
 
   return (
-    <div className="relative w-full mx-auto overflow-hidden rounded-lg">
+    <div className="relative w-full mx-auto overflow-hidden rounded-none">
       <div
         className="flex transition-transform duration-700 ease-in-out"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
