@@ -9,6 +9,7 @@ import ContactSection from "../sections/ContactSection";
 import ParallaxSection from "../sections/ParallaxSection";
 import ProductsSection from "../sections/ProductsSection";
 import BuySections from "../sections/BuySections";
+import MapSection from "../sections/MapSection";
 
 
 function Home() {
@@ -32,7 +33,6 @@ function Home() {
 
         <FormSection />
 
-
         <ParallaxSection />
 
         <ProductsSection />
@@ -40,6 +40,8 @@ function Home() {
         <BuySections />
 
         <ContactSection />
+
+        <MapSection />
 
         <WhatsAppButton />
       </div>
