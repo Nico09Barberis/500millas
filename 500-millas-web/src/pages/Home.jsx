@@ -10,6 +10,7 @@ import ParallaxSection from "../sections/ParallaxSection";
 import ProductsSection from "../sections/ProductsSection";
 import BuySections from "../sections/BuySections";
 import MapSection from "../sections/MapSection";
+import DataSection from "../sections/DataSection";
 
 
 function Home() {
@@ -40,6 +41,8 @@ function Home() {
         <BuySections />
 
         <ContactSection />
+
+        <DataSection />
 
         <MapSection />
 
