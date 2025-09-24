@@ -34,15 +34,15 @@ function Home() {
 
         <FormSection />
 
+        <BuySections />
+
         <ParallaxSection />
 
         <ProductsSection />
 
-        <BuySections />
-
-        <ContactSection />
-
         <DataSection />
+      
+        <ContactSection />
 
         <MapSection />
 
