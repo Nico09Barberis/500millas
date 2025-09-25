@@ -21,7 +21,7 @@ const BuySection = () => {
               <a
                 href="/apartado1"
                 aria-label="Ir a Alfajores"
-                className="px-6 py-2 border-2 border-[#5C4033] bg-transparent font-bebas text-lg sm:text-xl uppercase tracking-widest text-[#5C4033] hover:bg-[#5C4033] hover:text-[#E6C78E] font-semibold transition-all duration-200 shadow-sm hover:shadow-md"
+                className="px-6 py-2 border-2 border-[#4F4540] bg-transparent font-bebas text-lg sm:text-xl uppercase tracking-widest text-[#5C4033] hover:bg-[#4F4540] hover:text-[#E6C78E] font-semibold transition-all duration-200 shadow-sm hover:shadow-md"
               >
                 Alfajores
               </a>
@@ -40,7 +40,7 @@ const BuySection = () => {
               <a
                 href="/apartado2"
                 aria-label="Ir a Galletas"
-                className="px-6 py-2 border-2 border-[#5C4033] bg-transparent font-bebas text-lg sm:text-xl uppercase tracking-widest text-[#5C4033] hover:bg-[#5C4033] hover:text-[#E6C78E] font-semibold transition-all duration-200 shadow-sm hover:shadow-md"
+                className="px-6 py-2 border-2 border-[#4F4540] bg-transparent font-bebas text-lg sm:text-xl uppercase tracking-widest text-[#5C4033] hover:bg-[#4F4540] hover:text-[#E6C78E] font-semibold transition-all duration-200 shadow-sm hover:shadow-md"
               >
                 Galletas
               </a>

@@ -1,31 +1,56 @@
+import { FaSquarePhone } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
+import { FaHouse } from "react-icons/fa6";
+
 const MapSection = () => {
   return (
-    <section className="py-16 px-6 bg-gray-800">
+    <section className="py-16 px-6 bg-[#4F4540]">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-8">
+        
         {/* Contenido izquierda */}
-        <div className="md:w-1/3 flex flex-col items-start justify-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-400 mb-4">
+        <article className="md:w-1/3 font-ancois-one flex flex-col items-center md:items-start justify-center text-center md:text-left">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#E6C78E] mb-6">
             Nuestra ubicación
           </h2>
-          <p className="text-gray-300 mb-2">Los Robles 85, Bella Italia, Santa Fe</p>
-          <p className="text-gray-300 mb-4">📞 03492 582838</p>
-          <p className="text-gray-200 mb-6">
+
+          {/* Dirección */}
+          <p className="flex items-center gap-3 text-[#E6C78E] mb-3">
+            <FaHouse className="text-[#E6C78E] text-xl shrink-0" aria-label="Dirección" />
+            Los Robles 85, Bella Italia, Santa Fe
+          </p>
+
+          {/* Teléfono */}
+          <p className="flex items-center gap-3 text-[#E6C78E]  mb-3">
+            <FaSquarePhone className="text-[#E6C78E] text-xl shrink-0" aria-label="Teléfono" />
+            03492 582838
+          </p>
+
+          {/* Email (si lo usas) */}
+          <p className="flex items-center gap-3 text-[#E6C78E]  mb-6">
+            <MdEmail className="text-[#E6C78E] text-xl shrink-0" aria-label="Correo electrónico" />
+            contacto@tusitio.com
+          </p>
+
+          <p className="text-[#E6C78E] mb-6">
             Vení a visitarnos o contactanos para más información.  
           </p>
+
           <a
             href="https://www.google.com/maps/place/Los+Robles+85,+Santa+Fe"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-700 transition"
+            aria-label="Abrir ubicación en Google Maps"
+            className="px-6 py-3 bg-[#1A1712] hover:bg-[#0E0C09] border-2 border-[#E6C78E] text-white hover:scale-105 transition"
           >
             Abrir en Google Maps
           </a>
-        </div>
+        </article>
 
         {/* Mapa derecha */}
         <div className="md:w-2/3 h-96 rounded-xl overflow-hidden">
           <iframe
-            title="Ubicación"
+            title="Mapa de ubicación Los Robles 85, Bella Italia, Santa Fe"
+            aria-label="Mapa de Google con la ubicación Los Robles 85, Bella Italia, Santa Fe"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3410.3054896736835!2d-61.434978489613485!3d-31.267644074223675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95caaf39d3b60751%3A0xfbfe19459778686b!2sLos%20Robles%2085%2C%20S2300%20Bella%20Italia%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1758663983614!5m2!1ses-419!2sar"
             width="100%"
             height="100%"

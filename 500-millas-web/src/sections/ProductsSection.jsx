@@ -2,7 +2,7 @@ const ThreeImagesSection = () => {
   return (
     <section className="w-full max-w-7xl mx-auto my-16 px-6 text-center">
       {/* Título */}
-      <h2 className="text-3xl md:text-6xl font-bold text-gray-800 mb-4">
+      <h2 className="font-ancois-one text-3xl md:text-6xl font-bold text-[#4F4540] mb-4">
         Conoce nuestros productos
       </h2>
 

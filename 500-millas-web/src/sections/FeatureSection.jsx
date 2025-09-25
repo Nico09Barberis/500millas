@@ -15,7 +15,7 @@ const FeatureSection = () => {
           </p>
           <a
             href="#"
-            className="px-6 py-3 border-2 border-[#5C4033] bg-transparent hover:bg-[#5C4033] font-bebas text-lg uppercase tracking-widest text-[#5C4033] hover:text-[#E6C78E] font-semibold transition-colors duration-200"
+            className="px-6 py-3 border-2 border-[#4F4540] bg-transparent hover:bg-[#4F4540] font-bebas text-lg uppercase tracking-widest text-[#5C4033] hover:text-[#E6C78E] font-semibold transition-colors duration-200"
           >
             Llamado a la acción
           </a>
