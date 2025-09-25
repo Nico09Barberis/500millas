@@ -4,6 +4,7 @@ import logo from "../../assets/images/logo-blanco.png";
 import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaSquarePhone } from "react-icons/fa6";
+import { ImFolderDownload } from "react-icons/im";
 
 function MainLayout({ children }) {
   return (
@@ -50,6 +51,7 @@ function MainLayout({ children }) {
           {/* Columna derecha: Contacto / Redes */}
           <div className="flex flex-col items-center md:items-start">
             <h3 className="font-bold mb-3 text-lg">Contacto</h3>
+
             <p className="flex items-center gap-2 text-gray-300 mb-2">
               <MdEmail
                 className="text-gray-300 text-lg"
@@ -58,14 +60,25 @@ function MainLayout({ children }) {
               info@miempresa.com
             </p>
 
-            {/* Teléfono */}
-            <p className="flex items-center gap-2 text-gray-300 mb-4">
+            <p className="flex items-center gap-2 text-gray-300 mb-2">
               <FaSquarePhone
                 className="text-gray-300 text-lg"
                 aria-label="Teléfono"
               />
               +54 3492 582838
             </p>
+
+            <a
+              href="/trabaja-con-nosotros"
+              className="flex items-center gap-2 text-gray-300 mb-4 hover:text-[#5aafe0] hover:underline transition-colors"
+            >
+              <ImFolderDownload
+                className="text-gray-300 text-lg"
+                aria-label="Trabaja con nosotros"
+              />
+              Trabaja con nosotros
+            </a>
+
             <div className="flex gap-3">
               {/* Redes como botones circulares */}
               <a

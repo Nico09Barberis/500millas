@@ -42,10 +42,10 @@ function Home() {
 
         <ContactSection />
 
-        <img
+       <img
           src={imgHome3}          
           alt="Banner principal"
-          className="w-full max-w-5xl mx-auto my-12 h-auto object-cover"
+          className="hidden md:block w-full max-w-5xl mx-auto my-24 h-auto object-cover"
         />
 
         <MapSection />

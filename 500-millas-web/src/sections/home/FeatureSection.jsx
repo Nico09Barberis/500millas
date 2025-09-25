@@ -9,7 +9,7 @@ const FeatureSection = () => {
           <h2 className="text-3xl md:text-5xl lg:text-6xl font-ancois-one font-bold text-[#3B2F2F] mb-4">
             Título de la sección
           </h2>
-          <p className="font-cormorant-garamond font-semibold text-lg md:text-xl text-[#3B2F2F] mb-6">
+          <p className="font-cormorant-garamond font-bold text-lg md:text-2xl text-[#3B2F2F] mb-6">
             Este es un texto descriptivo para la sección. Explicá la característica,
             servicio o producto que querés destacar. Mantenerlo claro y conciso.
           </p>

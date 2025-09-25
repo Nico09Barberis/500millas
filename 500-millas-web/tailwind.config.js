@@ -17,6 +17,9 @@ export default {
         'rowdies-light': ['Rowdies', 'sans-serif'],
         'rowdies-regular': ['Rowdies', 'sans-serif'],
         'rowdies-bold': ['Rowdies', 'sans-serif'],
+         // Tangerine
+        'tangerine-regular': ['"Tangerine"', 'cursive'],
+        'tangerine-bold': ['"Tangerine"', 'cursive'],
       },
     },
   },
