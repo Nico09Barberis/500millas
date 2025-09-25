@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 import Navbar from "../common/Navbar";
-import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/logo-blanco.png";
 import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { FaSquarePhone } from "react-icons/fa6";
 
 function MainLayout({ children }) {
   return (
@@ -9,20 +11,17 @@ function MainLayout({ children }) {
       <Navbar />
       <main className="flex-grow">{children}</main>
 
-      <footer className="bg-gray-900 text-white py-12">
+      <footer className="bg-[#121212] text-white pt-12">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Columna izquierda: Logo/Icono */}
           <div className="flex flex-col items-center md:items-start">
-            <Link
-              to="/"
-            >
+            <Link to="/">
               <img
                 src={logo}
                 alt="Mi Empresa Logo"
-                className="h-24 w-32 object-contain"
+                className="h-34 w-40 object-contain"
               />
             </Link>{" "}
-            <p className="text-gray-200 font-semibold">Mi Empresa</p>
           </div>
 
           {/* Columna central: Links */}
@@ -51,8 +50,22 @@ function MainLayout({ children }) {
           {/* Columna derecha: Contacto / Redes */}
           <div className="flex flex-col items-center md:items-start">
             <h3 className="font-bold mb-3 text-lg">Contacto</h3>
-            <p className="text-gray-300 mb-2">📧 info@miempresa.com</p>
-            <p className="text-gray-300 mb-4">📞 +54 3492 582838</p>
+            <p className="flex items-center gap-2 text-gray-300 mb-2">
+              <MdEmail
+                className="text-gray-300 text-lg"
+                aria-label="Correo electrónico"
+              />
+              info@miempresa.com
+            </p>
+
+            {/* Teléfono */}
+            <p className="flex items-center gap-2 text-gray-300 mb-4">
+              <FaSquarePhone
+                className="text-gray-300 text-lg"
+                aria-label="Teléfono"
+              />
+              +54 3492 582838
+            </p>
             <div className="flex gap-3">
               {/* Redes como botones circulares */}
               <a
@@ -78,7 +91,7 @@ function MainLayout({ children }) {
         </div>
 
         {/* Línea inferior */}
-        <div className="mt-10 text-center text-gray-300 text-sm">
+        <div className="bg-black mt-10 py-8 text-center text-gray-300 text-sm">
           © {new Date().getFullYear()} Mi Empresa - Todos los derechos
           reservados
         </div>

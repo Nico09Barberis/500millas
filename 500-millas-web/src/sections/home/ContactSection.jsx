@@ -14,7 +14,7 @@ const ContactSection = () => {
   ];
 
   return (
-    <section className="w-full mx-auto my-12 text-white">
+    <section className="w-full mx-auto text-white">
       <div className="flex flex-col md:flex-row gap-0.5">
         {/* Imagen izquierda */}
         <div className="md:w-2/3 w-full">
