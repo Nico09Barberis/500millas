@@ -1,4 +1,4 @@
-import featureImg from "../assets/images/imgFormSection.png"; // reemplazá con tu imagen
+import featureImg from "../../assets/images/imgFormSection.png"; // reemplazá con tu imagen
 
 const FeatureSection = () => {
   return (

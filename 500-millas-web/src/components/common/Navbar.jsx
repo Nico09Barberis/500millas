@@ -79,7 +79,7 @@ function Navbar() {
         <Link
           to="/"
           className={`flex items-center transition-all duration-300 ${
-            isShrunk ? "h-16" : "h-32"
+            isShrunk ? "h-16" : "h-20"
           }`}
         >
           <img

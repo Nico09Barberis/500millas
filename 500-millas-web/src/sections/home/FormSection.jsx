@@ -1,4 +1,4 @@
-import bgImage from "../assets/images/img-home-1.jpg";
+import bgImage from "../../assets/images/img-home-1.jpg";
 
 const FormSection = () => {
   const formLink =

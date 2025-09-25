@@ -4,7 +4,7 @@ import { FaHouse } from "react-icons/fa6";
 
 const MapSection = () => {
   return (
-    <section className="py-16 px-6 bg-[#4F4540]">
+    <section className="py-16 px-6 bg-[#423c38]">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-8">
         
         {/* Contenido izquierda */}
@@ -47,7 +47,7 @@ const MapSection = () => {
         </article>
 
         {/* Mapa derecha */}
-        <div className="md:w-2/3 h-96 rounded-xl overflow-hidden">
+        <div className="md:w-2/3 h-96 overflow-hidden">
           <iframe
             title="Mapa de ubicación Los Robles 85, Bella Italia, Santa Fe"
             aria-label="Mapa de Google con la ubicación Los Robles 85, Bella Italia, Santa Fe"

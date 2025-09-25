@@ -2,15 +2,16 @@ import ImageCarousel from "../components/common/ImageCarousel";
 
 import imgHome1 from "../assets/images/img-home-1.jpg";
 import imgHome2 from "../assets/images/img-home-2.jpg";
-import FormSection from "../sections/FormSection";
-import FeatureSection from "../sections/FeatureSection";
+
+import FormSection from "../sections/home/FormSection";
+import FeatureSection from "../sections/home/FeatureSection";
 import WhatsAppButton from "../components/common/WhatsAppButton";
-import ContactSection from "../sections/ContactSection";
-import ParallaxSection from "../sections/ParallaxSection";
-import ProductsSection from "../sections/ProductsSection";
-import BuySections from "../sections/BuySections";
-import MapSection from "../sections/MapSection";
-import DataSection from "../sections/DataSection";
+import ContactSection from "../sections/home/ContactSection";
+import ParallaxSection from "../sections/home/ParallaxSection";
+import ProductsSection from "../sections/home/ProductsSection";
+import BuySections from "../sections/home/BuySections";
+import MapSection from "../sections/home/MapSection";
+import DataSection from "../sections/home/DataSection";
 
 
 function Home() {
