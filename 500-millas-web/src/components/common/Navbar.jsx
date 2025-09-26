@@ -147,14 +147,6 @@ function Navbar() {
               Productos
             </Link>
 
-            <a
-              href="#contact"
-              onClick={() => setIsOpen(false)}
-              className="block text-gray-700 hover:text-gray-900 text-lg"
-            >
-              Contacto
-            </a>
-
             <Link
               to="/como-comprar"
               onClick={() => setIsOpen(false)}
@@ -177,12 +169,6 @@ function Navbar() {
         <Link to="/productos" className="text-gray-700 hover:text-gray-900">
           Productos
         </Link>
-        <a
-          href="#contact"
-          className="block text-gray-700 hover:text-gray-900"
-        >
-          Contacto
-        </a>
         <Link to="/como-comprar" className="text-gray-700 hover:text-gray-900">
           Como comprar
         </Link>

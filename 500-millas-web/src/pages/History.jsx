@@ -2,6 +2,7 @@ import img1 from "../assets/images/imgFormSection.png";
 import img2 from "../assets/images/imgFormSection.png"; // reemplazá con otra imagen real
 import img3 from "../assets/images/imgFormSection.png"; // reemplazá con otra imagen real
 import bgImg from "../assets/images/history.jpeg";
+import WhatsAppButton from "../components/common/WhatsAppButton";
 
 const History = () => {
   const sections = [
@@ -44,7 +45,7 @@ const History = () => {
 
       <div
         className="relative max-w-4xl p-4 rounded-lg mx-auto mt-28 md:mt-28 
-        bg-gradient-to-b from-white via-[#fdf6e3] to-[#e6c78e]"
+        bg-gradient-to-b from-[#f0efe8] via-[#fdf6e3] to-[#e6c78e]"
       >
         {/* Título central */}
         <h1 className="text-4xl md:text-5xl font-bold text-center text-gray-900 tracking-wide mb-20 relative">
@@ -93,7 +94,11 @@ const History = () => {
           ))}
         </div>
       </div>
+
+      <WhatsAppButton />
+      
     </section>
+
   );
 };
 

@@ -13,8 +13,11 @@ const ContactSection = () => {
     { icon: FaCheckCircle, text: "Item adicional de ejemplo" },
   ];
 
+    const formLink = "https://docs.google.com/forms/d/e/1FAIpQLSdfrTwVrychl5dgV9xvE3mY_S5Bk0NNpUcgeF3R4ACttTFJhw/viewform?usp=header";
+
+
   return (
-    <section id="contact" className="w-full mx-auto text-white">
+    <section className="w-full mx-auto text-white">
       <div className="flex flex-col md:flex-row gap-0.5">
         {/* Imagen izquierda */}
         <div className="md:w-2/3 w-full">
@@ -36,7 +39,10 @@ const ContactSection = () => {
           </p>
 
           <a
-            href="#"
+            href={formLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Llenar solicitud (se abre en nueva pestaña)"
             className="inline-block text-center px-6 py-12 bg-white hover:bg-gray-200 font-ancois-one text-black uppercase text-2xl mb-6 hover:scale-105 transition"
           >
             Contactanos
