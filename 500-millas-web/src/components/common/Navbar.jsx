@@ -92,10 +92,16 @@ function Navbar() {
         {/* Right: Social Icons */}
         <div className="flex space-x-4">
           <a href="https://instagram.com" target="_blank" rel="noreferrer">
-            <FaInstagram className="text-gray-700 hover:text-gray-900" size={20} />
+            <FaInstagram
+              className="text-gray-700 hover:text-gray-900"
+              size={20}
+            />
           </a>
           <a href="https://facebook.com" target="_blank" rel="noreferrer">
-            <FaFacebook className="text-gray-700 hover:text-gray-900" size={20} />
+            <FaFacebook
+              className="text-gray-700 hover:text-gray-900"
+              size={20}
+            />
           </a>
         </div>
       </div>
@@ -103,7 +109,9 @@ function Navbar() {
       {/* Mobile Menu */}
       <div
         className={`fixed inset-0 z-40 transition-opacity duration-300 ${
-          isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+          isOpen
+            ? "opacity-100 pointer-events-auto"
+            : "opacity-0 pointer-events-none"
         }`}
       >
         {/* Overlay */}
@@ -117,19 +125,41 @@ function Navbar() {
           }`}
         >
           <div className="p-6 space-y-4 mt-16">
-            <Link to="/" onClick={() => setIsOpen(false)} className="block text-gray-700 hover:text-gray-900 text-lg">
+            <Link
+              to="/"
+              onClick={() => setIsOpen(false)}
+              className="block text-gray-700 hover:text-gray-900 text-lg"
+            >
               Inicio
             </Link>
-            <Link to="/historia" onClick={() => setIsOpen(false)} className="block text-gray-700 hover:text-gray-900 text-lg">
+            <Link
+              to="/historia"
+              onClick={() => setIsOpen(false)}
+              className="block text-gray-700 hover:text-gray-900 text-lg"
+            >
               Nuestra Historia
             </Link>
-            <Link to="/productos" onClick={() => setIsOpen(false)} className="block text-gray-700 hover:text-gray-900 text-lg">
+            <Link
+              to="/productos"
+              onClick={() => setIsOpen(false)}
+              className="block text-gray-700 hover:text-gray-900 text-lg"
+            >
               Productos
             </Link>
-            <Link to="/contacto" onClick={() => setIsOpen(false)} className="block text-gray-700 hover:text-gray-900 text-lg">
+
+            <a
+              href="#contact"
+              onClick={() => setIsOpen(false)}
+              className="block text-gray-700 hover:text-gray-900 text-lg"
+            >
               Contacto
-            </Link>
-            <Link to="/como-comprar" onClick={() => setIsOpen(false)} className="block text-gray-700 hover:text-gray-900 text-lg">
+            </a>
+
+            <Link
+              to="/como-comprar"
+              onClick={() => setIsOpen(false)}
+              className="block text-gray-700 hover:text-gray-900 text-lg"
+            >
               Como comprar
             </Link>
           </div>
@@ -138,11 +168,24 @@ function Navbar() {
 
       {/* Submenu debajo */}
       <div className="bg-white hidden md:flex justify-center space-x-8 py-2">
-        <Link to="/" className="text-gray-700 hover:text-gray-900">Home</Link>
-        <Link to="/historia" className="text-gray-700 hover:text-gray-900">Historia</Link>
-        <Link to="/productos" className="text-gray-700 hover:text-gray-900">Productos</Link>
-        <Link to="/contacto" className="text-gray-700 hover:text-gray-900">Contacto</Link>
-        <Link to="/como-comprar" className="text-gray-700 hover:text-gray-900">Como comprar</Link>
+        <Link to="/" className="text-gray-700 hover:text-gray-900">
+          Home
+        </Link>
+        <Link to="/historia" className="text-gray-700 hover:text-gray-900">
+          Historia
+        </Link>
+        <Link to="/productos" className="text-gray-700 hover:text-gray-900">
+          Productos
+        </Link>
+        <a
+          href="#contact"
+          className="block text-gray-700 hover:text-gray-900"
+        >
+          Contacto
+        </a>
+        <Link to="/como-comprar" className="text-gray-700 hover:text-gray-900">
+          Como comprar
+        </Link>
       </div>
     </nav>
   );
