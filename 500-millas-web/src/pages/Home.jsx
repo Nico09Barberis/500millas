@@ -14,6 +14,7 @@ import BuySections from "../sections/home/BuySections";
 import MapSection from "../sections/home/MapSection";
 import DataSection from "../sections/home/DataSection";
 import AboutSection from "../sections/home/AboutSection";
+import CommentsSection from "../sections/home/ComentsSection";
 
 
 function Home() {
@@ -47,6 +48,8 @@ function Home() {
           alt="Banner principal"
           className="hidden md:block w-full max-w-5xl mx-auto my-24 h-auto object-cover"
         />
+
+        <CommentsSection />
 
         <MapSection />
 
