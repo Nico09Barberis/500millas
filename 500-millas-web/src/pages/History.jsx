@@ -37,14 +37,14 @@ const History = () => {
 
   return (
     <section
-      className="relative py-24 px-6 bg-cover bg-center"
+      className="relative md:py-24 md:px-6 bg-cover bg-center"
       style={{ backgroundImage: `url(${bgImg})` }}
     >
       {/* Overlay cálido en lugar de negro puro */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-[#2b1b0e]/70 to-black/60 pointer-events-none"></div>
 
       <div
-        className="relative max-w-4xl p-4 rounded-lg mx-auto mt-28 md:mt-28 
+        className="relative max-w-4xl p-4 rounded-none md:rounded-lg mx-auto mt-28 md:mt-28 
         bg-gradient-to-b from-[#f0efe8] via-[#fdf6e3] to-[#e6c78e]"
       >
         {/* Título central */}
@@ -76,7 +76,7 @@ const History = () => {
               </div>
 
               {/* Texto */}
-              <div className="md:w-1/2 p-6">
+              <div className="md:w-1/2 p-6 text-center md:text-start">
                 <h2 className="font-rowdies-bold text-2xl md:text-3xl text-gray-900 mb-6">
                   {sec.title}
                 </h2>
