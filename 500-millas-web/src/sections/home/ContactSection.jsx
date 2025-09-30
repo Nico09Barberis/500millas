@@ -29,7 +29,7 @@ const ContactSection = () => {
         </div>
 
         {/* Contenido derecha */}
-        <div className="md:w-1/3 w-full bg-[#E6C78E] flex flex-col p-4 justify-center">
+        <div className="md:w-1/3 w-full bg-[#E6C977] flex flex-col p-4 justify-center">
           <h2 className="font-ancois-one text-4xl md:text-5xl font-bold text-[#3B2F2F] mb-4">
             ¿Querés vender nuestros productos?
           </h2>
