@@ -34,7 +34,12 @@ const OrderForm = ({ products, whatsappNumber }) => {
 
     const selectedProducts = products
       .filter((p) => quantities[p.id] > 0)
-      .map((p) => `- ${p.name} (${quantities[p.id]} x $${p.price}): $${quantities[p.id] * p.price}`)
+      .map(
+        (p) =>
+          `- ${p.name} (${quantities[p.id]} x $${p.price}): $${
+            quantities[p.id] * p.price
+          }`
+      )
       .join("%0A");
 
     if (!selectedProducts) {
@@ -48,7 +53,7 @@ const OrderForm = ({ products, whatsappNumber }) => {
 
   return (
     <form
-      className="flex flex-col gap-4 overflow-auto p-6 max-h-[70vh] bg-slate-900 rounded-2xl shadow-lg"
+      className="flex flex-col gap-4 overflow-auto p-6 max-h-[85vh] bg-slate-900 rounded-2xl shadow-lg"
       onSubmit={handleSubmit}
     >
       <h2 className="text-center text-3xl font-bold text-gray-300 mb-4">
@@ -73,6 +78,7 @@ const OrderForm = ({ products, whatsappNumber }) => {
         required
       />
 
+
       <div className="flex-1 overflow-auto">
         {products.map((product) => (
           <div key={product.id} className="flex flex-col mb-3">
@@ -82,13 +88,25 @@ const OrderForm = ({ products, whatsappNumber }) => {
             <input
               type="number"
               min="0"
+              max="10" // límite máximo
               value={quantities[product.id] || 0}
-              onChange={(e) => handleQuantityChange(product.id, e.target.value)}
+              onChange={(e) => {
+                let value = Number(e.target.value);
+                if (value > 10) value = 10; // aseguramos límite aunque se escriba manualmente
+                handleQuantityChange(product.id, value);
+              }}
               className="bg-slate-800 w-11/12 rounded-xl border border-gray-700 px-3 py-2 text-gray-200 text-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-offset-2 focus:ring-offset-slate-900 transition"
             />
           </div>
         ))}
       </div>
+
+
+      {/* Mensaje informativo */}
+      <p className="text-sm italic text-[#F0D98F] mt-2">
+        Máximo 10 unidades por producto. Para pedidos mayores, contactarse por
+        WhatsApp o email.
+      </p>
 
       {/* Total dinámico */}
       <div className="text-right text-gray-200 font-bold text-lg">
