@@ -4,6 +4,7 @@ import MainLayout from "../components/layout/MainLayout";
 import Home from "../pages/Home";
 import History from "../pages/History";
 import Product from "../pages/Products";
+import HowToBuy from "../pages/HowToBuy";
 
 function AppRoutes() {
   return (
@@ -11,6 +12,7 @@ function AppRoutes() {
       <Route path="/" element={<MainLayout><Home /></MainLayout>} />
       <Route path="/historia" element={<MainLayout><History /></MainLayout>} />
       <Route path="/productos" element={<MainLayout><Product /></MainLayout>} />
+      <Route path="/como-comprar" element={<MainLayout><HowToBuy /></MainLayout>} />
     </Routes>
   );
 }

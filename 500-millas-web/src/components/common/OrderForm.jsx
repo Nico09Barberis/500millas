@@ -4,6 +4,7 @@ const OrderForm = ({ products, whatsappNumber }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [quantities, setQuantities] = useState({});
+  const [total, setTotal] = useState(0);
 
   useEffect(() => {
     if (products) {
@@ -15,6 +16,15 @@ const OrderForm = ({ products, whatsappNumber }) => {
     }
   }, [products]);
 
+  useEffect(() => {
+    // Calcula total cada vez que cambian las cantidades
+    const newTotal = products.reduce((sum, product) => {
+      const qty = quantities[product.id] || 0;
+      return sum + qty * (product.price || 0);
+    }, 0);
+    setTotal(newTotal);
+  }, [quantities, products]);
+
   const handleQuantityChange = (id, value) => {
     setQuantities({ ...quantities, [id]: Number(value) });
   };
@@ -24,7 +34,7 @@ const OrderForm = ({ products, whatsappNumber }) => {
 
     const selectedProducts = products
       .filter((p) => quantities[p.id] > 0)
-      .map((p) => `- ${p.name}: ${quantities[p.id]}`)
+      .map((p) => `- ${p.name} (${quantities[p.id]} x $${p.price}): $${quantities[p.id] * p.price}`)
       .join("%0A");
 
     if (!selectedProducts) {
@@ -32,7 +42,7 @@ const OrderForm = ({ products, whatsappNumber }) => {
       return;
     }
 
-    const message = `Nuevo pedido de ${name} (${email})%0A${selectedProducts}`;
+    const message = `Nuevo pedido de ${name} (${email})%0A${selectedProducts}%0ATotal: $${total}`;
     window.open(`https://wa.me/${whatsappNumber}?text=${message}`, "_blank");
   };
 
@@ -66,7 +76,9 @@ const OrderForm = ({ products, whatsappNumber }) => {
       <div className="flex-1 overflow-auto">
         {products.map((product) => (
           <div key={product.id} className="flex flex-col mb-3">
-            <label className="text-gray-300 font-medium mb-1">{product.name}:</label>
+            <label className="text-gray-300 font-medium mb-1">
+              {product.name} (${product.price})
+            </label>
             <input
               type="number"
               min="0"
@@ -76,6 +88,11 @@ const OrderForm = ({ products, whatsappNumber }) => {
             />
           </div>
         ))}
+      </div>
+
+      {/* Total dinámico */}
+      <div className="text-right text-gray-200 font-bold text-lg">
+        Total: ${total}
       </div>
 
       <button

@@ -11,6 +11,7 @@ const products = [
     description:
       "Contiene 12 alfajores santafesinos artesanales: tres galletas y dos suaves capas de dulce de leche, bañadas en glase. Perfecto para regalar, acompañar un evento especial o simplemente darse un gusto.",
     presentation: ["12 unid", "560 g", "30 x 40 cm"],
+    price: 12000,
     img: imgProduct,
     imgHover: imgProductHover,
   },
@@ -19,6 +20,7 @@ const products = [
     name: "Paquete de alfajores santafesinos",
     description: "El más rico dulce de leche artesanal entre dos deliciosas galletitas de masa casera, bañadas en chocolate.",
     presentation: ["individual", "6 unds", "12 unds"],
+    price: 12000,
     img: imgProduct,
     imgHover: imgProductHover,
   },
@@ -27,6 +29,7 @@ const products = [
     name: "Galletas marinas comunes",
     description: "Las galletas marinas comunes, un clásico infaltable, ofrecen una textura crujiente y un sabor neutro que las hace perfectas para acompañar cualquier comida o disfrutar solas.",
     presentation: ["individual", "6 unds", "12 unds"],
+    price: 12000,
     img: imgProduct,
     imgHover: imgProductHover,
   },
@@ -35,6 +38,7 @@ const products = [
     name: "Galletas marinas con semillas",
     description: "Crujientes y nutritivas, nuestras galletas combinan semillas de lino, sésamo y chía para un snack lleno de sabor y energía. Perfectas para disfrutar en cualquier momento del día.",
     presentation: ["individual", "6 unds", "12 unds"],
+    price: 12000,
     img: imgProduct,
     imgHover: imgProductHover,
   },
@@ -79,6 +83,9 @@ const ProductSection = () => {
                 </p>
                 <p className="font-cormorant-garamond text-xl italic font-semibold text-black">
                   {product.presentation.join(" // ")}
+                </p>
+                <p className="font-oswald text-xl uppercase text-black">
+                  Precio: $ {product.price}
                 </p>
               </div>
             </div>
