@@ -48,15 +48,15 @@ const History = () => {
         bg-gradient-to-b from-[#f0efe8] via-[#fdf6e3] to-[#e6c78e]"
       >
         {/* Título central */}
-        <h1 className="text-4xl md:text-5xl font-bold text-center text-gray-900 tracking-wide mb-20 relative">
-          <span className="font-ancois-one relative z-10">
+        <h1 className="text-4xl md:text-6xl font-bold text-center text-gray-900 tracking-wide mb-20 relative">
+          <span className="font-tangerine-bold relative z-10">
             Nuestra Historia
           </span>
           <span className="absolute left-1/2 -translate-x-1/2 bottom-[-12px] w-32 h-[4px] bg-gradient-to-r from-[#e6c78e] to-[#d4af37] rounded-full"></span>
         </h1>
 
         {/* Secciones */}
-        <div className="flex flex-col gap-28">
+        <div className="flex flex-col gap-24">
           {sections.map((sec, index) => (
             <div
               key={index}
@@ -76,17 +76,17 @@ const History = () => {
               </div>
 
               {/* Texto */}
-              <div className="md:w-1/2 bg-white/90 backdrop-blur-sm rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-500 border-l-4 border-[#e6c78e]">
-                <h2 className="font-ancois-one text-2xl md:text-3xl text-gray-900 mb-6">
+              <div className="md:w-1/2 p-6">
+                <h2 className="font-rowdies-bold text-2xl md:text-3xl text-gray-900 mb-6">
                   {sec.title}
                 </h2>
-                <p className="font-ancois-one text-gray-700 leading-relaxed mb-4">
+                <p className="font-cormorant-garamond font-semibold text-lg text-gray-800 leading-relaxed mb-4">
                   {sec.text}
                 </p>
-                <p className="font-ancois-one text-gray-700 leading-relaxed mb-4">
+                <p className="font-cormorant-garamond font-semibold text-lg text-gray-800 leading-relaxed mb-4">
                   {sec.text2}
                 </p>
-                <p className="font-ancois-one text-gray-700 leading-relaxed">
+                <p className="font-cormorant-garamond font-semibold text-lg text-gray-800 leading-relaxed">
                   {sec.text3}
                 </p>
               </div>

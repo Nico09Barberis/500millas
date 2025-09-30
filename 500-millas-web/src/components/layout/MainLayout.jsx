@@ -104,7 +104,7 @@ function MainLayout({ children }) {
         </div>
 
         {/* Línea inferior */}
-        <div className="bg-black mt-10 py-8 text-center text-gray-300 text-sm">
+        <div className="bg-black mt-10 py-4 text-center text-gray-300 text-sm">
           © {new Date().getFullYear()} Mi Empresa - Todos los derechos
           reservados
         </div>
