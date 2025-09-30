@@ -14,7 +14,7 @@ const AboutSection = () => {
           </h2>
 
           {/* Contenido */}
-          <p className="font-tangerine-regular text-2xl md:text-4xl font-bold text-white leading-relaxed mb-6">
+          <p className="font-cormorant-garamond text-lg md:text-2xl font-semibold italic text-white leading-relaxed mb-6">
             Somos una empresa dedicada a brindar productos de calidad y un servicio
             personalizado. Creemos en la atención cercana, la confianza y el compromiso
             con cada uno de nuestros clientes. Nuestra misión es ayudarte a encontrar lo
