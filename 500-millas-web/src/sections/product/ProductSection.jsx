@@ -7,7 +7,7 @@ import OrderForm from "../../components/common/OrderForm";
 const products = [
   {
     id: 1,
-    name: "caja premium",
+    name: "Caja premium",
     description:
       "Contiene 12 alfajores santafesinos artesanales: tres galletas y dos suaves capas de dulce de leche, bañadas en glase. Perfecto para regalar, acompañar un evento especial o simplemente darse un gusto.",
     presentation: ["12 unid", "560 g", "30 x 40 cm"],
@@ -16,27 +16,24 @@ const products = [
   },
   {
     id: 2,
-    name: "ALFACHOCO NEGRO",
-    description:
-      "El más rico dulce de leche artesanal entre dos deliciosas galletitas de masa casera, bañadas en chocolate.",
+    name: "Paquete de alfajores santafesinos",
+    description: "El más rico dulce de leche artesanal entre dos deliciosas galletitas de masa casera, bañadas en chocolate.",
     presentation: ["individual", "6 unds", "12 unds"],
     img: imgProduct,
     imgHover: imgProductHover,
   },
   {
     id: 3,
-    name: "ALFACHOCO NEGRO",
-    description:
-      "El más rico dulce de leche artesanal entre dos deliciosas galletitas de masa casera, bañadas en chocolate.",
+    name: "Galletas marinas comunes",
+    description: "Las galletas marinas comunes, un clásico infaltable, ofrecen una textura crujiente y un sabor neutro que las hace perfectas para acompañar cualquier comida o disfrutar solas.",
     presentation: ["individual", "6 unds", "12 unds"],
     img: imgProduct,
     imgHover: imgProductHover,
   },
   {
     id: 4,
-    name: "ALFACHOCO NEGRO",
-    description:
-      "El más rico dulce de leche artesanal entre dos deliciosas galletitas de masa casera, bañadas en chocolate.",
+    name: "Galletas marinas con semillas",
+    description: "Crujientes y nutritivas, nuestras galletas combinan semillas de lino, sésamo y chía para un snack lleno de sabor y energía. Perfectas para disfrutar en cualquier momento del día.",
     presentation: ["individual", "6 unds", "12 unds"],
     img: imgProduct,
     imgHover: imgProductHover,
@@ -77,7 +74,7 @@ const ProductSection = () => {
                 <p className="font-cormorant-garamond text-xl text-black font-semibold">
                   {product.description}
                 </p>
-                <p className="font-bebas text-2xl font-semibold uppercase text-black tracking-wider">
+                <p className="font-oswald text-xl uppercase text-black">
                   Presentación:
                 </p>
                 <p className="font-cormorant-garamond text-xl italic font-semibold text-black">
@@ -106,7 +103,7 @@ const ProductSection = () => {
         <div className="mt-12 text-center">
           <button
             onClick={() => setIsOpen(true)}
-            className="px-6 py-3 bg-green-700 text-white rounded-lg shadow hover:bg-green-800 transition"
+            className="px-6 py-2 border-2 border-[#4F4540] bg-transparent font-bebas text-lg sm:text-xl uppercase tracking-widest text-[#5C4033] hover:bg-[#4F4540] hover:text-[#F0D98F] font-semibold transition-all duration-200 shadow-sm hover:shadow-md"
           >
             Hacer pedido
           </button>

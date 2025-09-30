@@ -72,7 +72,7 @@ const OrderForm = ({ products, whatsappNumber }) => {
               min="0"
               value={quantities[product.id] || 0}
               onChange={(e) => handleQuantityChange(product.id, e.target.value)}
-              className="bg-slate-800 w-full rounded-xl border border-gray-700 px-3 py-2 text-gray-200 text-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-offset-2 focus:ring-offset-slate-900 transition"
+              className="bg-slate-800 w-11/12 rounded-xl border border-gray-700 px-3 py-2 text-gray-200 text-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-offset-2 focus:ring-offset-slate-900 transition"
             />
           </div>
         ))}
