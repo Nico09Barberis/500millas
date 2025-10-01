@@ -3,9 +3,9 @@ import logo from "../../assets/images/logo-blanco.png";
 const AboutSection = () => {
   return (
     <section className="py-16 px-6">
-      <div className="max-w-5xl mx-auto bg-[#302e2c] shadow-sm">
+      <div className="max-w-5xl mx-auto bg-[#302e2c] shadow-sm rounded-3xl">
         {/* Franja superior */}
-        <div className="h-12 w-full bg-[#E6C977] mb-6"></div>
+        <div className="h-12 w-full bg-[#E6C977] mb-6 rounded-t-3xl"></div>
 
         <div className="px-6 pb-6 text-center w-full max-w-4xl mx-auto">
           {/* Título */}

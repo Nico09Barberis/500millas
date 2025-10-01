@@ -36,9 +36,9 @@ function Navbar() {
       }`}
     >
       {/* Main Navbar */}
-      <div className="max-w-6xl mx-auto px-4 flex justify-between items-center">
+      <div className="relative max-w-6xl mx-auto px-4 flex items-center h-20">
         {/* Left: Hamburger */}
-        <div className="flex items-center md:space-x-4">
+        <div className="flex items-center md:space-x-4 z-10">
           <button
             className="md:hidden text-gray-700 hover:text-gray-900 focus:outline-none"
             onClick={() => setIsOpen(!isOpen)}
@@ -78,7 +78,7 @@ function Navbar() {
         {/* Center: Logo */}
         <Link
           to="/"
-          className={`flex items-center transition-all duration-300 ${
+          className={`absolute left-1/2 transform -translate-x-1/2 flex items-center transition-all duration-300 ${
             isShrunk ? "h-16" : "h-20"
           }`}
         >
@@ -88,22 +88,6 @@ function Navbar() {
             className="h-full w-auto object-contain"
           />
         </Link>
-
-        {/* Right: Social Icons */}
-        <div className="flex space-x-4">
-          <a href="https://instagram.com" target="_blank" rel="noreferrer">
-            <FaInstagram
-              className="text-gray-700 hover:text-gray-900"
-              size={20}
-            />
-          </a>
-          <a href="https://facebook.com" target="_blank" rel="noreferrer">
-            <FaFacebook
-              className="text-gray-700 hover:text-gray-900"
-              size={20}
-            />
-          </a>
-        </div>
       </div>
 
       {/* Mobile Menu */}
@@ -128,21 +112,21 @@ function Navbar() {
             <Link
               to="/"
               onClick={() => setIsOpen(false)}
-              className="block text-gray-700 hover:text-gray-900 text-lg"
+              className="block text-gray-500 hover:text-gray-700 hover:bg-[#E0F7FA] font-ancois-one uppercase rounded-xl py-1 px-2 text-lg"
             >
-              Inicio
+              home
             </Link>
             <Link
               to="/historia"
               onClick={() => setIsOpen(false)}
-              className="block text-gray-700 hover:text-gray-900 text-lg"
+              className="block text-gray-500 hover:text-gray-700 hover:bg-[#E0F7FA] font-ancois-one uppercase rounded-xl py-1 px-2 text-lg"
             >
               Nuestra Historia
             </Link>
             <Link
               to="/productos"
               onClick={() => setIsOpen(false)}
-              className="block text-gray-700 hover:text-gray-900 text-lg"
+              className="block text-gray-500 hover:text-gray-700 hover:bg-[#E0F7FA] font-ancois-one uppercase rounded-xl py-1 px-2 text-lg"
             >
               Productos
             </Link>
@@ -150,7 +134,7 @@ function Navbar() {
             <Link
               to="/como-comprar"
               onClick={() => setIsOpen(false)}
-              className="block text-gray-700 hover:text-gray-900 text-lg"
+              className="block text-gray-500 hover:text-gray-700 hover:bg-[#E0F7FA] font-ancois-one uppercase rounded-xl py-1 px-2 text-lg"
             >
               Como comprar
             </Link>
@@ -159,19 +143,23 @@ function Navbar() {
       </div>
 
       {/* Submenu debajo */}
-      <div className="bg-white hidden md:flex justify-center space-x-8 py-2">
-        <Link to="/" className="text-gray-700 hover:text-gray-900">
-          Home
-        </Link>
-        <Link to="/historia" className="text-gray-700 hover:text-gray-900">
-          Historia
-        </Link>
-        <Link to="/productos" className="text-gray-700 hover:text-gray-900">
-          Productos
-        </Link>
-        <Link to="/como-comprar" className="text-gray-700 hover:text-gray-900">
-          Como comprar
-        </Link>
+      <div className="bg-white hidden md:flex justify-center font-bebas tracking-wide text-xl space-x-8 pt-4">
+        {[
+          { to: "/", label: "Home" },
+          { to: "/historia", label: "Historia" },
+          { to: "/productos", label: "Productos" },
+          { to: "/como-comprar", label: "Como comprar" },
+        ].map((item) => (
+          <Link
+            key={item.to}
+            to={item.to}
+            className="relative text-gray-700 hover:text-gray-900 pb-1
+              border-b-2 border-transparent hover:border-gray-900
+              transition-all duration-200"
+          >
+            {item.label}
+          </Link>
+        ))}
       </div>
     </nav>
   );

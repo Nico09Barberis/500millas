@@ -78,14 +78,14 @@ const ProductSection = () => {
                 <p className="font-cormorant-garamond text-xl text-black font-semibold">
                   {product.description}
                 </p>
-                <p className="font-oswald text-xl uppercase text-black">
+                <p className="font-ancois-one text-xl uppercase italic text-black">
                   Presentación:
                 </p>
                 <p className="font-cormorant-garamond text-xl italic font-semibold text-black">
                   {product.presentation.join(" // ")}
                 </p>
-                <p className="font-oswald text-xl uppercase text-black">
-                  Precio: $ {product.price}
+                <p className="font-ancois-one italic text-xl uppercase text-black">
+                  {product.price.toLocaleString("es-AR", { style: "currency", currency: "ARS" })}
                 </p>
               </div>
             </div>
