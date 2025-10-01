@@ -69,7 +69,9 @@ function MainLayout({ children }) {
             </p>
 
             <a
-              href="/trabaja-con-nosotros"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSf5OjN13wZ91Tu4Kz7onGUFzcYkvsOibqi3HEQvoqu3ml7Vaw/viewform?usp=header" // reemplazá TU_FORM_ID con el ID real de tu form
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-2 text-gray-300 mb-4 hover:text-[#5aafe0] hover:underline transition-colors"
             >
               <ImFolderDownload

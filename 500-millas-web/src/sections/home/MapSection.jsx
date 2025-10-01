@@ -4,7 +4,7 @@ import { FaHouse } from "react-icons/fa6";
 
 const MapSection = () => {
   return (
-    <section className="py-16 px-6 bg-[#423c38]">
+    <section className="py-16 px-6 bg-[#121212]"> 
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-8">
         
         {/* Contenido izquierda */}

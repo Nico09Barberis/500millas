@@ -1,10 +1,10 @@
 const BuySection = () => {
   return (
-    <section className="bg-white py-12">
+    <section className="bg-white py-12 my-6">
       <div className="w-full max-w-6xl mx-auto px-4">
         {/* Título */}
         <h2 className="text-3xl md:text-5xl font-ancois-one uppercase text-center mb-12">
-          Compra por categoría
+          Conoce nuestros productos
         </h2>
 
         {/* Contenedor de imágenes */}

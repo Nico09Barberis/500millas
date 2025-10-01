@@ -35,11 +35,9 @@ function Home() {
         
         <DataSection />
 
-        <BuySections />
-
         <ParallaxSection />
-
-        <ProductsSection />
+        
+        <BuySections />
 
         <ContactSection />
 

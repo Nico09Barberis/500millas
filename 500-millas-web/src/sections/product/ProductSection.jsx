@@ -50,7 +50,7 @@ const ProductSection = () => {
   return (
     <section className="bg-gradient-to-b py-16 px-6">
       <div className="max-w-5xl mx-auto flex flex-col gap-12">
-        <div className="max-w-3xl mx-auto flex flex-col text-justify md:text-center">
+        <div className="max-w-3xl mx-auto flex flex-col text-center">
           <h2 className="text-5xl font-tangerine-regular font-bold mb-6">
             Sabías que ...
           </h2>

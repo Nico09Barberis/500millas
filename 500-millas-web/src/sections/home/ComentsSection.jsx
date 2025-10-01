@@ -33,7 +33,7 @@ const CommentsSection = () => {
             </p>
 
             {/* Texto pequeño */}
-            <p className="font-cormorant-garamond text-gray-300 text-xs md:text-sm max-w-md mx-auto mb-4">
+            <p className="font-cormorant-garamond font-semibold text-gray-300 text-xs md:text-sm max-w-md mx-auto mb-4">
               12 unid | 560 g | sabor unico
             </p>
           </div>
@@ -44,28 +44,28 @@ const CommentsSection = () => {
       <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-4 gap-8 font-cormorant-garamond text-center px-4">
         <div className="flex flex-col items-center">
           <RiDoubleQuotesR className="text-white text-5xl mb-3" />
-          <p className="text-gray-300">
+          <p className="font-semibold text-gray-300">
             “Los probé por primera vez en un viaje a Santa Fe y me enamoré, son
             increíbles. - Lucas. R"
           </p>
         </div>
         <div className="flex flex-col items-center">
           <RiDoubleQuotesR className="text-white text-5xl mb-3" />
-          <p className="text-gray-300">
+          <p className="font-semibold text-gray-300">
             “Nada como estos alfajores para la merienda, el dulce de leche es
             espectacular. - Ana. S"
           </p>
         </div>
         <div className="flex flex-col items-center">
           <RiDoubleQuotesR className="text-white text-5xl mb-3" />
-          <p className="text-gray-300">
+          <p className="font-semibold text-gray-300">
             “Los compré para regalar y terminaron quedándose en casa, ¡son
             adictivos!. - Marta. C"
           </p>
         </div>
         <div className="flex flex-col items-center">
           <RiDoubleQuotesR className="text-white text-5xl mb-3" />
-          <p className="text-gray-300">
+          <p className="font-semibold text-gray-300">
             “Me recuerdan a mi infancia, el sabor es igual al que hacía mi
             abuela. - Diego. L”
           </p>
