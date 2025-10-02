@@ -1,6 +1,5 @@
 import { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { FaInstagram, FaFacebook } from "react-icons/fa";
 import logo from "../../assets/images/logo.png";
 
 function Navbar() {
@@ -79,7 +78,7 @@ function Navbar() {
         <Link
           to="/"
           className={`absolute left-1/2 transform -translate-x-1/2 flex items-center transition-all duration-300 ${
-            isShrunk ? "h-16" : "h-20"
+            isShrunk ? "h-14 md:h-16" : "h-16 md:h-20"
           }`}
         >
           <img
