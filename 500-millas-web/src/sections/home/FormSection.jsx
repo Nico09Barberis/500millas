@@ -1,7 +1,8 @@
-import bgImage from "../../assets/images/descargar.jpeg";
+import bgImage from "../../assets/images/bgform.jpeg";
 
 const FormSection = () => {
-  const formLink = "https://docs.google.com/forms/d/e/1FAIpQLSdfrTwVrychl5dgV9xvE3mY_S5Bk0NNpUcgeF3R4ACttTFJhw/viewform?usp=header";
+  const formLink =
+    "https://docs.google.com/forms/d/e/1FAIpQLSdfrTwVrychl5dgV9xvE3mY_S5Bk0NNpUcgeF3R4ACttTFJhw/viewform?usp=header";
 
   return (
     <section className="relative w-full h-[500px] overflow-hidden">
@@ -21,8 +22,9 @@ const FormSection = () => {
           ¿Querés sumarte a la familia 500millas?
         </h1>
         <p className="font-rowdies-light text-lg md:text-xl mb-6">
-          Si sos distribuidor o querés emprender, vendé el alfajor medalla de
-          oro y plata en el Mundial de Alfajores. Excelente calidad con la mejor
+          Si sos distribuidor o querés emprender, sumá a tu negocio nuestros
+          productos artesanales, reconocidos por su sabor y calidad. Amplia
+          variedad para todos los gustos. Excelente calidad con la mejor
           rentabilidad.{" "}
         </p>
 
