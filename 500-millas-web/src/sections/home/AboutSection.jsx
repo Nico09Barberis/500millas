@@ -19,12 +19,12 @@ const AboutSection = () => {
         {/* Contenido */}
         <div className="relative text-center w-full max-w-4xl mx-auto px-8 py-8">
           {/* Título */}
-          <h2 className="font-tangerine-regular text-3xl md:text-6xl font-bold text-white mb-4">
+          <h2 className="font-tangerine-regular text-5xl md:text-6xl font-bold text-white mb-4">
             Quiénes Somos
           </h2>
 
           {/* Texto */}
-          <p className="font-cormorant-garamond text-lg md:text-2xl font-semibold italic text-white leading-relaxed mb-8">
+          <p className="font-cormorant-garamond text-xl md:text-2xl font-semibold italic text-white leading-relaxed mb-8">
             Somos una empresa dedicada a brindar productos de calidad y un servicio
             personalizado. Creemos en la atención cercana, la confianza y el compromiso
             con cada uno de nuestros clientes. Nuestra misión es ayudarte a encontrar lo

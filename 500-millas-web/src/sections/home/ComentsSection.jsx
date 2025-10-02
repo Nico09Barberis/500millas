@@ -1,17 +1,26 @@
 import React from "react";
 import { RiDoubleQuotesR } from "react-icons/ri";
-import img from "../../assets/images/flag.jpeg";
+import img from "../../assets/images/bgComents.jpeg";
 
 const CommentsSection = () => {
   return (
     <section className="bg-[#121212] min-h-screen flex flex-col items-center justify-start py-12">
-      {/* Imagen con overlay */}
+      {/* Imagen con overlay y blur */}
       <div className="relative w-full max-w-4xl mb-12">
-        <img src={img} alt="Background" className="w-full h-auto" />
+        {/* Imagen de fondo con blur */}
+        <img
+          src={img}
+          alt="Background"
+          className="w-full h-auto blur-sm" // ajustá el blur (blur-sm / blur-md / blur-lg)
+        />
+
+        {/* Overlay sutil */}
+        <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+
         {/* Contenido centrado */}
         <div className="absolute inset-0 w-full max-w-xl mx-auto flex flex-col items-center justify-center text-center">
-          {/* Contenedor del contenido con fondo rojo opcional */}
-          <div className="bg-[#121212] px-6 py-6 rounded">
+          {/* Contenedor del contenido */}
+          <div className="bg-[#121212]/70 px-6 py-6 rounded">
             {/* Línea - texto - línea */}
             <div className="flex items-center justify-center space-x-4 mb-4">
               <span className="h-px w-12 bg-white opacity-50"></span>

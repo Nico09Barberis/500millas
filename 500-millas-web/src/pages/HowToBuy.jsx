@@ -2,7 +2,7 @@ import React from "react";
 
 const HowToBuy = () => {
   return (
-    <section className="bg-gradient-to-b from-[#FDF6E3] to-[#FFF8E1] mt-28 py-20 px-6">
+    <section className="bg-gradient-to-b from-[#f0efe8] via-[#fdf6e3] to-[#e6c78e] mt-28 py-20 px-6">
       <div className="max-w-4xl mx-auto flex flex-col gap-12">
         {/* Título */}
         <div className="text-center">

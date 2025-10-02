@@ -1,4 +1,4 @@
-import sectionImg from "../../assets/images/imgFormSection.png";
+import sectionImg from "../../assets/images/cajaPremium.jpg";
 import { FaCheckCircle } from "react-icons/fa";
 import { FaSquarePhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";

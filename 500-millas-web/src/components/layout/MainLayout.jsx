@@ -29,29 +29,28 @@ function MainLayout({ children }) {
           <div className="flex flex-col items-center md:items-start">
             <h3 className="font-bold mb-3 text-lg">Navegación</h3>
             <a
-              href="#"
+              href="/"
               className="text-gray-300 hover:text-white mb-1 transition-colors duration-300"
             >
               Inicio
             </a>
             <a
-              href="#"
+              href="/productos"
               className="text-gray-300 hover:text-white mb-1 transition-colors duration-300"
             >
               Productos
             </a>
             <a
-              href="#"
+              href="/como-comprar"
               className="text-gray-300 hover:text-white mb-1 transition-colors duration-300"
             >
-              Contacto
+              como comprar
             </a>
           </div>
 
           {/* Columna derecha: Contacto / Redes */}
           <div className="flex flex-col items-center md:items-start">
             <h3 className="font-bold mb-3 text-lg">Contacto</h3>
-
             <p className="flex items-center gap-2 text-gray-300 mb-2">
               <MdEmail
                 className="text-gray-300 text-lg"
@@ -59,7 +58,6 @@ function MainLayout({ children }) {
               />
               info@miempresa.com
             </p>
-
             <p className="flex items-center gap-2 text-gray-300 mb-2">
               <FaSquarePhone
                 className="text-gray-300 text-lg"
@@ -67,7 +65,6 @@ function MainLayout({ children }) {
               />
               +54 3492 582838
             </p>
-
             <a
               href="https://docs.google.com/forms/d/e/1FAIpQLSf5OjN13wZ91Tu4Kz7onGUFzcYkvsOibqi3HEQvoqu3ml7Vaw/viewform?usp=header" // reemplazá TU_FORM_ID con el ID real de tu form
               target="_blank"
@@ -80,23 +77,32 @@ function MainLayout({ children }) {
               />
               Trabaja con nosotros
             </a>
-
             <div className="flex gap-3">
-              {/* Redes como botones circulares */}
+              {/* Facebook */}
               <a
-                href="#"
+                href="https://www.facebook.com/tucuenta" // 🔹 reemplazá con tu perfil real
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 flex items-center justify-center rounded-full bg-white text-indigo-700 hover:bg-indigo-600 hover:text-white transition-shadow shadow-md hover:shadow-xl"
               >
                 <FaFacebookF />
               </a>
+
+              {/* Instagram */}
               <a
-                href="#"
+                href="https://www.instagram.com/500millas__/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 flex items-center justify-center rounded-full bg-white text-pink-600 hover:bg-pink-600 hover:text-white transition-shadow shadow-md hover:shadow-xl"
               >
                 <FaInstagram />
               </a>
+
+              {/* WhatsApp */}
               <a
-                href="#"
+                href="https://wa.me/5493492582838" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 flex items-center justify-center rounded-full bg-white text-green-500 hover:bg-green-500 hover:text-white transition-shadow shadow-md hover:shadow-xl"
               >
                 <FaWhatsapp />

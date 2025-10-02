@@ -1,4 +1,4 @@
-import featureImg from "../../assets/images/imgFormSection.png"; // reemplazá con tu imagen
+import featureImg from "../../assets/images/alfajor.jpg"; // reemplazá con tu imagen
 
 const FeatureSection = () => {
   return (
@@ -18,7 +18,7 @@ const FeatureSection = () => {
             inconfundible aspecto y un toque de dulzura extra.
           </p>
           <a
-            href="#"
+            href="/productos"
             className="px-6 py-3 border-2 border-[#4F4540] bg-transparent hover:bg-[#4F4540] font-bebas text-lg uppercase tracking-widest text-[#5C4033] hover:text-[#E6C78E] font-semibold transition-colors duration-200"
           >
             Comprar
