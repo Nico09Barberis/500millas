@@ -1,7 +1,7 @@
 import ImageCarousel from "../components/common/ImageCarousel";
 
-import imgHome1 from "../assets/images/img-home-1.jpg";
-import imgHome2 from "../assets/images/img-home-2.jpg";
+import imgHome1 from "../assets/images/imgHome1.png";
+// import imgHome2 from "../assets/images/img-home-2.jpg";
 import imgHome3 from "../assets/images/img-home.png";
 
 import FormSection from "../sections/home/FormSection";
@@ -9,7 +9,6 @@ import FeatureSection from "../sections/home/FeatureSection";
 import WhatsAppButton from "../components/common/WhatsAppButton";
 import ContactSection from "../sections/home/ContactSection";
 import ParallaxSection from "../sections/home/ParallaxSection";
-import ProductsSection from "../sections/home/ProductsSection";
 import BuySections from "../sections/home/BuySections";
 import MapSection from "../sections/home/MapSection";
 import DataSection from "../sections/home/DataSection";
@@ -18,14 +17,20 @@ import CommentsSection from "../sections/home/ComentsSection";
 
 
 function Home() {
-  const images = [ imgHome1, imgHome2 ];
+  // const images = [ imgHome1, imgHome2 ];
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-white">
       <div className="mt-28 md:mt-36">
         {" "}
         {/* margin-top para no tapar la navbar fija */}
-        <ImageCarousel images={images} />
+        {/*<ImageCarousel images={images} />*/}
+
+      <img
+        src={imgHome1}          
+        alt="Banner principal"
+        className="hidden md:block w-full max-w-5xl mx-auto my-24 h-auto object-cover"
+      />
 
         <FeatureSection />
 
@@ -41,11 +46,11 @@ function Home() {
 
         <ContactSection />
 
-       <img
-          src={imgHome3}          
-          alt="Banner principal"
-          className="hidden md:block w-full max-w-5xl mx-auto my-24 h-auto object-cover"
-        />
+      <img
+        src={imgHome3}          
+        alt="Banner principal"
+        className="hidden md:block w-full max-w-5xl mx-auto my-24 h-auto object-cover"
+      />
 
         <CommentsSection />
 

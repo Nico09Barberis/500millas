@@ -4,9 +4,8 @@ import { FaHouse } from "react-icons/fa6";
 
 const MapSection = () => {
   return (
-    <section className="py-16 px-6 bg-[#121212]"> 
+    <section className="py-16 px-6 bg-[#121212]">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-8">
-        
         {/* Contenido izquierda */}
         <article className="md:w-1/3 font-ancois-one flex flex-col items-center md:items-start justify-center text-center md:text-left">
           <h2 className="text-3xl md:text-4xl font-bold text-[#E6C78E] mb-6">
@@ -15,24 +14,35 @@ const MapSection = () => {
 
           {/* Dirección */}
           <p className="flex items-center gap-3 text-[#E6C78E] mb-3">
-            <FaHouse className="text-[#E6C78E] text-xl shrink-0" aria-label="Dirección" />
+            <FaHouse
+              className="text-[#E6C78E] text-xl shrink-0"
+              aria-label="Dirección"
+            />
             Los Robles 85, Bella Italia, Santa Fe
           </p>
 
           {/* Teléfono */}
-          <p className="flex items-center gap-3 text-[#E6C78E]  mb-3">
-            <FaSquarePhone className="text-[#E6C78E] text-xl shrink-0" aria-label="Teléfono" />
-            03492 582838
+          <p className="flex items-center gap-3 text-[#E6C78E] mb-3">
+            <FaSquarePhone
+              className="text-[#E6C78E] text-xl shrink-0"
+              aria-label="Teléfono"
+            />
+            <a href="tel:03492582838" className="hover:underline">
+              03492 582838
+            </a>
           </p>
 
           {/* Email (si lo usas) */}
           <p className="flex items-center gap-3 text-[#E6C78E]  mb-6">
-            <MdEmail className="text-[#E6C78E] text-xl shrink-0" aria-label="Correo electrónico" />
+            <MdEmail
+              className="text-[#E6C78E] text-xl shrink-0"
+              aria-label="Correo electrónico"
+            />
             contacto@tusitio.com
           </p>
 
           <p className="text-[#E6C78E] mb-6">
-            Vení a visitarnos o contactanos para más información.  
+            Vení a visitarnos o contactanos para más información.
           </p>
 
           <a
