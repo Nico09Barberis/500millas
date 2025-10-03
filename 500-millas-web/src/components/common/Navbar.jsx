@@ -31,7 +31,7 @@ function Navbar() {
   return (
     <nav
       className={`fixed w-full z-50 bg-white shadow-md transition-all duration-300 ${
-        isShrunk ? "py-2" : "py-4"
+        isShrunk ? "py-1" : "py-4"
       }`}
     >
       {/* Main Navbar */}

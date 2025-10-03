@@ -18,7 +18,8 @@ const products = [
   {
     id: 2,
     name: "Paquete de alfajores santafesinos",
-    description: "El más rico dulce de leche artesanal entre dos deliciosas galletitas de masa casera, bañadas en chocolate.",
+    description:
+      "Alfajores santafesinos artesanales: tres galletas y dos suaves capas de dulce de leche, bañadas en glase. Ideales para compartir, regalar o disfrutar en cualquier momento.",
     presentation: ["paquete sellado", "480 g", "12 unidades"],
     price: 12000,
     img: imgProduct,
@@ -27,7 +28,8 @@ const products = [
   {
     id: 3,
     name: "Galletas marinas comunes",
-    description: "Las galletas marinas comunes, un clásico infaltable, ofrecen una textura crujiente y un sabor neutro que las hace perfectas para acompañar cualquier comida o disfrutar solas.",
+    description:
+      "Las galletas marinas comunes, un clásico infaltable, ofrecen una textura crujiente y un sabor neutro que las hace perfectas para acompañar cualquier comida o disfrutar solas.",
     presentation: ["paquete sellado", "300 g"],
     price: 1200,
     img: imgProduct,
@@ -36,7 +38,8 @@ const products = [
   {
     id: 4,
     name: "Galletas marinas con semillas",
-    description: "Crujientes y nutritivas, nuestras galletas combinan semillas de lino, sésamo y chía para un snack lleno de sabor y energía. Perfectas para disfrutar en cualquier momento del día.",
+    description:
+      "Crujientes y nutritivas, nuestras galletas combinan semillas de lino, sésamo y chía para un snack lleno de sabor y energía. Perfectas para disfrutar en cualquier momento del día.",
     presentation: ["paquete sellado", "300 g"],
     price: 1200,
     img: imgProduct,
@@ -68,24 +71,27 @@ const ProductSection = () => {
             className="w-full max-w-5xl flex flex-col md:flex-row overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-500 group"
           >
             {/* Columna izquierda - Texto */}
-            <div className="md:w-1/2 bg-[#F0D98F] p-8 flex flex-col justify-center text-black relative">
+            <div className="md:w-1/2 bg-[#F0D98F] p-8 flex flex-col justify-center text-[#3F3732] relative">
               <h3 className="font-bebas text-4xl md:text-5xl font-extrabold tracking-wide mb-6 relative">
                 {product.name}
                 <span className="absolute left-0 -bottom-2 w-20 h-1 bg-black rounded-full opacity-50"></span>
               </h3>
 
               <div className="space-y-3">
-                <p className="font-cormorant-garamond text-xl text-black font-semibold">
+                <p className="font-cormorant-garamond text-xl font-bold">
                   {product.description}
                 </p>
-                <p className="font-ancois-one text-xl uppercase italic text-black">
+                <p className="font-ancois-one text-xl uppercase italic">
                   Presentación:
                 </p>
-                <p className="font-cormorant-garamond text-xl italic font-semibold text-black">
+                <p className="font-cormorant-garamond text-xl italic font-bold">
                   {product.presentation.join(" // ")}
                 </p>
-                <p className="font-ancois-one italic text-xl uppercase text-black">
-                  {product.price.toLocaleString("es-AR", { style: "currency", currency: "ARS" })}
+                <p className="font-ancois-one italic text-xl uppercase">
+                  {product.price.toLocaleString("es-AR", {
+                    style: "currency",
+                    currency: "ARS",
+                  })}
                 </p>
               </div>
             </div>
@@ -106,8 +112,13 @@ const ProductSection = () => {
           </div>
         ))}
 
+        <div className="text-center">
+          <p className="font-dancing text-4xl md:text-5xl font-bold mb-2 text-[#4F4540]">¡Seguimos creando!</p>
+          <p className="font-cormorant-garamond text-lg md:text-xl italic font-bold text-[#7A6E68]">Proximamente nuevos productos...</p>
+        </div>
+
         {/* Botón para abrir el modal */}
-        <div className="mt-12 text-center">
+        <div className="mt-6 text-center">
           <button
             onClick={() => setIsOpen(true)}
             className="px-6 py-2 border-2 border-[#4F4540] bg-transparent font-bebas text-lg sm:text-xl uppercase tracking-widest text-[#5C4033] hover:bg-[#4F4540] hover:text-[#F0D98F] font-semibold transition-all duration-200 shadow-sm hover:shadow-md"
