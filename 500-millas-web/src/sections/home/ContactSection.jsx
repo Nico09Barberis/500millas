@@ -12,8 +12,8 @@ const ContactSection = () => {
     { icon: FaInstagram, text: "Seguinos en instagram @500millas__" },
   ];
 
-    const formLink = "https://docs.google.com/forms/d/e/1FAIpQLSdfrTwVrychl5dgV9xvE3mY_S5Bk0NNpUcgeF3R4ACttTFJhw/viewform?usp=header";
-
+  const formLink =
+    "https://docs.google.com/forms/d/e/1FAIpQLSdfrTwVrychl5dgV9xvE3mY_S5Bk0NNpUcgeF3R4ACttTFJhw/viewform?usp=header";
 
   return (
     <section className="w-full mx-auto text-white">
@@ -22,13 +22,14 @@ const ContactSection = () => {
         <div className="md:w-2/3 w-full">
           <img
             src={sectionImg}
-            alt="Sección destacada"
+            alt="Caja premium con productos"
+            loading="lazy"
             className="w-full h-auto object-cover"
           />
         </div>
 
         {/* Contenido derecha */}
-        <div className="md:w-1/3 w-full bg-[#E6C977] flex flex-col p-4 justify-center">
+        <div className="md:w-1/3 w-full bg-[#E6C977] flex flex-col p-4 py-12 md:py-4 sm:p-6 text-center md:text-left md:justify-center">
           <h2 className="font-ancois-one text-4xl md:text-5xl font-bold text-[#3B2F2F] mb-4">
             ¿Querés vender nuestros productos?
           </h2>
@@ -52,8 +53,11 @@ const ContactSection = () => {
             {items.map((item, index) => {
               const Icon = item.icon; // guardamos el componente del icono
               return (
-                <li key={index} className="font-ancois-one flex items-center gap-2 font-extralight text-xl text-[#4F4540]">
-                  <Icon className="text-[#4F4540]" />
+                <li
+                  key={index}
+                  className="font-ancois-one flex items-center gap-2 font-extralight text-xl text-[#4F4540]"
+                >
+                  <Icon className="text-[#4F4540]" aria-hidden="true" />
                   {item.text}
                 </li>
               );

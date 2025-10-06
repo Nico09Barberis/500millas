@@ -2,7 +2,15 @@ import React from "react";
 import { RiDoubleQuotesR } from "react-icons/ri";
 import img from "../../assets/images/bgComents.jpeg";
 
-const CommentsSection = () => {
+// Recibe un array de comentarios por props
+const CommentsSection = ({
+  comments = [
+    "Los probé por primera vez en un viaje a Santa Fe y me enamoré, son increíbles. - Lucas R",
+    "Nada como estos alfajores para la merienda, el dulce de leche es espectacular. - Ana S",
+    "Los compré para regalar y terminaron quedándose en casa, ¡son adictivos!. - Marta C",
+    "Me recuerdan a mi infancia, el sabor es igual al que hacía mi abuela. - Diego L",
+  ],
+}) => {
   return (
     <section className="bg-[#121212] min-h-screen flex flex-col items-center justify-start py-12">
       {/* Imagen con overlay y blur */}
@@ -10,8 +18,8 @@ const CommentsSection = () => {
         {/* Imagen de fondo con blur */}
         <img
           src={img}
-          alt="Background"
-          className="w-full h-auto blur-sm" // ajustá el blur (blur-sm / blur-md / blur-lg)
+          alt="" // imagen decorativa, no la leen los lectores de pantalla
+          className="w-full h-64 md:h-96 object-cover blur-sm"
         />
 
         {/* Overlay sutil */}
@@ -43,7 +51,7 @@ const CommentsSection = () => {
 
             {/* Texto pequeño */}
             <p className="font-cormorant-garamond font-semibold text-gray-300 text-xs md:text-sm max-w-md mx-auto mb-4">
-              12 unid | 560 g | sabor unico
+              12 unid | 560 g | sabor único
             </p>
           </div>
         </div>
@@ -51,34 +59,15 @@ const CommentsSection = () => {
 
       {/* Sección de 4 columnas con iconos */}
       <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-4 gap-8 font-cormorant-garamond text-center px-4">
-        <div className="flex flex-col items-center">
-          <RiDoubleQuotesR className="text-white text-5xl mb-3" />
-          <p className="font-semibold text-gray-300">
-            “Los probé por primera vez en un viaje a Santa Fe y me enamoré, son
-            increíbles. - Lucas. R"
-          </p>
-        </div>
-        <div className="flex flex-col items-center">
-          <RiDoubleQuotesR className="text-white text-5xl mb-3" />
-          <p className="font-semibold text-gray-300">
-            “Nada como estos alfajores para la merienda, el dulce de leche es
-            espectacular. - Ana. S"
-          </p>
-        </div>
-        <div className="flex flex-col items-center">
-          <RiDoubleQuotesR className="text-white text-5xl mb-3" />
-          <p className="font-semibold text-gray-300">
-            “Los compré para regalar y terminaron quedándose en casa, ¡son
-            adictivos!. - Marta. C"
-          </p>
-        </div>
-        <div className="flex flex-col items-center">
-          <RiDoubleQuotesR className="text-white text-5xl mb-3" />
-          <p className="font-semibold text-gray-300">
-            “Me recuerdan a mi infancia, el sabor es igual al que hacía mi
-            abuela. - Diego. L”
-          </p>
-        </div>
+        {comments.map((text, i) => (
+          <div key={i} className="flex flex-col items-center">
+            <RiDoubleQuotesR
+              className="text-white text-5xl mb-3"
+              aria-hidden="true"
+            />
+            <p className="font-semibold text-gray-300">{text}</p>
+          </div>
+        ))}
       </div>
     </section>
   );
