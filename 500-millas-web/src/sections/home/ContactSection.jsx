@@ -1,5 +1,5 @@
 import sectionImg from "../../assets/images/cajaPremium.jpg";
-import { FaInstagramSquare } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 import { FaSquarePhone, FaHouse } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
@@ -9,7 +9,7 @@ const ContactSection = () => {
     { icon: FaSquarePhone, text: "Llamanos al 3492502030" },
     { icon: MdEmail, text: "Escribinos a info@ejemplo.com" },
     { icon: FaHouse, text: "Visitanos en nuestro local" },
-    { icon: FaInstagramSquare, text: "Seguinos en instagram @500millas__" },
+    { icon: FaInstagram, text: "Seguinos en instagram @500millas__" },
   ];
 
     const formLink = "https://docs.google.com/forms/d/e/1FAIpQLSdfrTwVrychl5dgV9xvE3mY_S5Bk0NNpUcgeF3R4ACttTFJhw/viewform?usp=header";

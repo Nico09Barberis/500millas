@@ -113,7 +113,7 @@ const ProductSection = () => {
         ))}
 
         <div className="text-center">
-          <p className="font-dancing text-4xl md:text-5xl font-bold mb-2 text-[#4F4540]">¡Seguimos creando!</p>
+          <p className="font-dancing text-3xl md:text-4xl font-bold mb-2 text-[#4F4540]">¡Seguimos creando!</p>
           <p className="font-cormorant-garamond text-lg md:text-xl italic font-bold text-[#7A6E68]">Proximamente nuevos productos...</p>
         </div>
 

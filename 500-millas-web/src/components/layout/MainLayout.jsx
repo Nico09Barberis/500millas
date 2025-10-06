@@ -4,6 +4,7 @@ import logo from "../../assets/images/logo-blanco.png";
 import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaSquarePhone } from "react-icons/fa6";
+import { MdOutlineWork } from "react-icons/md";
 import { ImFolderDownload } from "react-icons/im";
 
 function MainLayout({ children }) {
@@ -71,7 +72,7 @@ function MainLayout({ children }) {
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-gray-300 mb-4 hover:text-[#5aafe0] hover:underline transition-colors"
             >
-              <ImFolderDownload
+              <MdOutlineWork
                 className="text-gray-300 text-lg"
                 aria-label="Trabaja con nosotros"
               />
@@ -80,7 +81,7 @@ function MainLayout({ children }) {
             <div className="flex gap-3">
               {/* Facebook */}
               <a
-                href="https://www.facebook.com/tucuenta" // 🔹 reemplazá con tu perfil real
+                href="https://www.facebook.com/tucuenta" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 flex items-center justify-center rounded-full bg-white text-indigo-700 hover:bg-indigo-600 hover:text-white transition-shadow shadow-md hover:shadow-xl"
