@@ -25,7 +25,7 @@ function Home() {
       <img
         src={imgHome1}          
         alt="Banner principal"
-        className="hidden md:block w-full max-w-5xl mx-auto my-24 h-auto object-cover"
+        className="w-full max-w-5xl mx-auto my-0 md:my-12 h-auto object-cover"
       />
 
         <FeatureSection />

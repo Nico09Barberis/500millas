@@ -3,7 +3,7 @@ import imgGalleta from "../../assets/images/catGalleta.png";
 
 // Componente reutilizable para cada producto
 const ProductCard = ({ img, alt, label }) => (
-  <div className="relative h-64 sm:h-80 md:h-96 bg-gray-200 overflow-hidden rounded-lg shadow-2xl group">
+  <div className="relative h-64 sm:h-80 md:h-96 bg-[#ffe6a2] overflow-hidden rounded-lg shadow-2xl group">
     <img
       loading="lazy"
       src={img}
