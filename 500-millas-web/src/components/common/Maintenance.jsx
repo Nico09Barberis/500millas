@@ -16,7 +16,7 @@ export default function Maintenance() {
       {/* Botón para recargar */}
       <button
         onClick={() => window.location.reload()}
-        className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg shadow-md transition-colors"
+        className="px-6 py-3 bg-[#3B82F6] hover:bg-[#2563EB] text-white font-semibold rounded-lg shadow-md transition-colors"
       >
         Actualizar página
       </button>

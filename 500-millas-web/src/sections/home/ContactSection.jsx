@@ -55,7 +55,7 @@ const ContactSection = () => {
               return (
                 <li
                   key={index}
-                  className="font-ancois-one flex items-center gap-2 font-extralight text-xl text-[#4F4540]"
+                  className="font-ancois-one flex items-center gap-2 font-extralight text-lg text-[#4F4540]"
                 >
                   <Icon className="text-[#4F4540]" aria-hidden="true" />
                   {item.text}
