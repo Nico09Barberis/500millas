@@ -5,7 +5,7 @@ import img from "../../assets/images/bgComents.jpeg";
 // Recibe un array de comentarios por props
 const CommentsSection = ({
   comments = [
-    "Los probé por primera vez en un viaje a Santa Fe y me enamoré, son increíbles. - Lucas R",
+    "Los probé por primera vez en un viaje a Santa Fe y me enamoré, una delicia. - Luz R",
     "Nada como estos alfajores para la merienda, el dulce de leche es espectacular. - Ana S",
     "Los compré para regalar y terminaron quedándose en casa, ¡son adictivos!. - Marta C",
     "Me recuerdan a mi infancia, el sabor es igual al que hacía mi abuela. - Diego L",
@@ -65,7 +65,7 @@ const CommentsSection = ({
               className="text-white text-5xl mb-3"
               aria-hidden="true"
             />
-            <p className="font-semibold text-gray-300">{text}</p>
+            <p className="font-semibold text-gray-300 text-lg">{text}</p>
           </div>
         ))}
       </div>
