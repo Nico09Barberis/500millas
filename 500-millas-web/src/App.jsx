@@ -1,7 +1,7 @@
 import { BrowserRouter } from "react-router-dom";
 import AppRoutes from "./routes/AppRoutes";
 import ScrollToTop from "./components/layout/ScrollToTop";
-import Maintenance from "./components/Maintenance";
+import Maintenance from "./components/common/Maintenance";
 
 function App() {
   // 1️⃣ Leer variable de entorno: ¿modo mantenimiento activado?
