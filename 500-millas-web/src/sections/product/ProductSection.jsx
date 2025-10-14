@@ -71,20 +71,20 @@ const ProductSection = () => {
             className="w-full max-w-5xl flex flex-col md:flex-row overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-500 group"
           >
             {/* Columna izquierda - Texto */}
-            <div className="md:w-1/2 bg-[#F0D98F] p-8 flex flex-col justify-center text-[#3F3732] relative">
+            <div className="md:w-1/2 bg-[#F0D98F] p-2 md:p-8 flex flex-col justify-center text-[#3F3732] relative">
               <h3 className="font-bebas text-4xl md:text-5xl font-extrabold tracking-wide mb-6 relative">
                 {product.name}
                 <span className="absolute left-0 -bottom-2 w-20 h-1 bg-black rounded-full opacity-50"></span>
               </h3>
 
               <div className="space-y-3">
-                <p className="font-cormorant-garamond text-xl font-bold">
+                <p className="font-cormorant-garamond text-lg md:text-xl font-bold">
                   {product.description}
                 </p>
-                <p className="font-ancois-one text-xl uppercase italic">
+                <p className="font-ancois-one text-lg md:text-xl uppercase italic">
                   Presentación:
                 </p>
-                <p className="font-cormorant-garamond text-xl italic font-bold">
+                <p className="font-cormorant-garamond text-lg md:text-xl italic font-bold">
                   {product.presentation.join(" // ")}
                 </p>
                 <p className="font-ancois-one italic text-xl uppercase">
