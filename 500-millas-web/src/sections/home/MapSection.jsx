@@ -33,12 +33,17 @@ const MapSection = () => {
           </p>
 
           {/* Email (si lo usas) */}
-          <p className="flex items-center gap-3 text-[#E6C78E]  mb-6">
+          <p className="flex items-center gap-3 text-[#E6C78E] mb-6">
             <MdEmail
               className="text-[#E6C78E] text-xl shrink-0"
               aria-label="Correo electrónico"
             />
-            contacto@tusitio.com
+            <a
+              href="mailto:alfajores500millas@gmail.com"
+              className="hover:underline"
+            >
+              alfajores500millas@gmail.com
+            </a>
           </p>
 
           <p className="text-[#E6C78E] mb-6">

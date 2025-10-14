@@ -7,7 +7,7 @@ const ContactSection = () => {
   // Cada item ahora tiene un icono y un texto
   const items = [
     { icon: FaSquarePhone, text: "Llamanos al 3492502030" },
-    { icon: MdEmail, text: "Escribinos a info@ejemplo.com" },
+    { icon: MdEmail, text: "alfajores500millas@gmail.com" },
     { icon: FaHouse, text: "Visitanos en nuestro local" },
     { icon: FaInstagram, text: "Seguinos en instagram @500millas__" },
   ];
@@ -30,7 +30,7 @@ const ContactSection = () => {
 
         {/* Contenido derecha */}
         <div className="md:w-1/3 w-full bg-[#E6C977] flex flex-col p-4 py-12 md:py-4 sm:p-6 text-center md:text-left md:justify-center">
-          <h2 className="font-ancois-one text-4xl md:text-5xl font-bold text-[#3B2F2F] mb-4">
+          <h2 className="font-ancois-one text-3xl md:text-4xl font-bold text-[#3B2F2F] mb-4">
             ¿Querés vender nuestros productos?
           </h2>
           <p className="font-ancois-one text-xl md:text-2xl text-[#4F4540] mb-6">

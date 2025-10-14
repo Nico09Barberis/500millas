@@ -57,8 +57,14 @@ function MainLayout({ children }) {
                 className="text-gray-300 text-lg"
                 aria-label="Correo electrónico"
               />
-              info@miempresa.com
+              <a
+                href="mailto:alfajores500millas@gmail.com"
+                className="hover:underline"
+              >
+                alfajores500millas@gmail.com
+              </a>
             </p>
+
             <p className="flex items-center gap-2 text-gray-300 mb-2">
               <FaSquarePhone
                 className="text-gray-300 text-lg"
@@ -70,7 +76,7 @@ function MainLayout({ children }) {
               href="https://docs.google.com/forms/d/e/1FAIpQLSf5OjN13wZ91Tu4Kz7onGUFzcYkvsOibqi3HEQvoqu3ml7Vaw/viewform?usp=header" // reemplazá TU_FORM_ID con el ID real de tu form
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-gray-300 mb-4 hover:text-[#5aafe0] hover:underline transition-colors"
+              className="flex items-center gap-2 text-gray-300 mb-4 hover:underline transition-colors"
             >
               <MdOutlineWork
                 className="text-gray-300 text-lg"
@@ -81,7 +87,7 @@ function MainLayout({ children }) {
             <div className="flex gap-3">
               {/* Facebook */}
               <a
-                href="https://www.facebook.com/tucuenta" 
+                href="https://www.facebook.com/tucuenta"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 flex items-center justify-center rounded-full bg-white text-indigo-700 hover:bg-indigo-600 hover:text-white transition-shadow shadow-md hover:shadow-xl"
@@ -101,7 +107,7 @@ function MainLayout({ children }) {
 
               {/* WhatsApp */}
               <a
-                href="https://wa.me/5493492582838" 
+                href="https://wa.me/5493492582838"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 flex items-center justify-center rounded-full bg-white text-green-500 hover:bg-green-500 hover:text-white transition-shadow shadow-md hover:shadow-xl"
