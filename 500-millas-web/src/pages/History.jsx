@@ -75,7 +75,7 @@ const History = () => {
               </div>
 
               {/* Texto */}
-              <div className="md:w-1/2 p-6 text-center md:text-start">
+              <div className="md:w-1/2 p-2 md:p-6 text-center md:text-start">
                 <h2 className="font-caudex text-2xl md:text-3xl font-bold text-gray-900 mb-6">
                   {sec.title}
                 </h2>

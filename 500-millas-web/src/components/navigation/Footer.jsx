@@ -125,7 +125,7 @@ function Footer() {
       </div>
 
       {/* Línea inferior */}
-      <div className="bg-black mt-10 py-4 text-cente text-gray-300 font-sans text-sm">
+      <div className="bg-black mt-10 py-4 px-2 text-center text-gray-300 font-sans text-sm">
          © Copyright {new Date().getFullYear()} 500 millas | Todos los Derechos Reservados | All Rights Reserved
       </div>
     </footer>

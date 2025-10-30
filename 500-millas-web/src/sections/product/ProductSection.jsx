@@ -10,7 +10,7 @@ const products = [
     id: 1,
     name: "Caja premium",
     description:
-      "Contiene 12 alfajores santafesinos artesanales: tres galletas y dos suaves capas de dulce de leche, bañadas en glase. Perfecto para regalar, acompañar un evento especial o simplemente darse un gusto.",
+      "Contiene 12 alfajores santafesinos artesanales con dulce de leche y baño de glase. Ideal para regalar o disfrutar en ocasiones especiales.",
     presentation: ["caja sellada", "480 g", "12 unidades", "30 x 40 cm"],
     price: 12000,
     img: imgProduct,
@@ -20,7 +20,7 @@ const products = [
     id: 2,
     name: "Paquete de alfajores santafesinos",
     description:
-      "Alfajores santafesinos artesanales: tres galletas y dos suaves capas de dulce de leche, bañadas en glase.\n Ideales para compartir, regalar o disfrutar en cualquier momento.",
+      "Tres galletas y dos capas de dulce de leche bañadas en glase. Una opción práctica para compartir o disfrutar en cualquier momento.",
     presentation: ["paquete sellado", "480 g", "12 unidades"],
     price: 12000,
     img: imgProduct,
@@ -30,21 +30,23 @@ const products = [
     id: 3,
     name: "Galletas marinas comunes",
     description:
-      "Las galletas marinas comunes, un clásico infaltable, ofrecen una textura crujiente y un sabor neutro que las hace perfectas para acompañar cualquier comida o disfrutar solas.",
+      "Galletas crujientes de sabor neutro, ideales para acompañar comidas o consumir solas.",
     presentation: ["paquete sellado", "300 g"],
     price: 1200,
     img: imgProduct,
     imgHover: imgProductHover,
+    badge: "nuevo",
   },
   {
     id: 4,
     name: "Galletas marinas con semillas",
     description:
-      "Crujientes y nutritivas, nuestras galletas combinan semillas de lino, sésamo y chía para un snack lleno de sabor y energía. Perfectas para disfrutar en cualquier momento del día.",
+      "Galletas integrales con lino, sésamo y chía. Crujientes, sabrosas y nutritivas para cualquier momento del día.",
     presentation: ["paquete sellado", "300 g"],
     price: 1200,
     img: imgProduct,
     imgHover: imgProductHover,
+    badge: "nuevo",
   },
 ];
 
@@ -66,7 +68,7 @@ const ProductSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto px-4 py-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto px-1 py-5">
           {products.map((product) => (
             <div
               key={product.id}
@@ -84,9 +86,11 @@ const ProductSection = () => {
                   alt={product.name}
                   className="w-full h-full object-cover transition-opacity duration-500 opacity-0 group-hover:opacity-100"
                 />
-                <span className="absolute top-3 left-3 bg-[#F0D98F] text-[#2E2723] text-xs font-bold py-1 px-3 rounded-full uppercase tracking-wide shadow">
-                  {product.presentation[0]}
-                </span>
+                {product.badge && (
+                  <span className="absolute top-3 left-3 bg-[#C5D86D] text-[#3B352E] text-xs font-bold py-1 px-3 rounded-full uppercase tracking-wide shadow">
+                    {product.badge}
+                  </span>
+                )}
               </div>
 
               {/* Contenido */}
@@ -96,7 +100,7 @@ const ProductSection = () => {
                     {product.name}
                   </h3>
 
-                  <p className="text-[#2E2723] text-md mb-3 line-clamp-4 whitespace-pre-line font-semibold">
+                  <p className="text-[#2E2723] text-md mb-3 whitespace-pre-line font-semibold">
                     {product.description}
                   </p>
 
@@ -140,15 +144,6 @@ const ProductSection = () => {
           ))}
         </div>
 
-        <div className="text-center">
-          <p className="font-dancing text-3xl md:text-4xl font-bold mb-2 text-[#4F4540]">
-            ¡Seguimos creando!
-          </p>
-          <p className="font-cormorant-garamond text-lg md:text-xl italic font-bold text-[#7A6E68]">
-            Proximamente nuevos productos...
-          </p>
-        </div>
-
         {/* Botón para abrir el modal */}
         <div className="mt-6 text-center">
           <button
@@ -157,6 +152,15 @@ const ProductSection = () => {
           >
             Hacer pedido
           </button>
+        </div>
+
+        <div className="text-center">
+          <p className="font-dancing text-3xl md:text-4xl font-bold mb-2 text-[#4F4540]">
+            ¡Seguimos creando!
+          </p>
+          <p className="font-cormorant-garamond text-lg md:text-xl italic font-bold text-[#7A6E68]">
+            Proximamente nuevos productos...
+          </p>
         </div>
       </div>
 
