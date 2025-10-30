@@ -10,7 +10,7 @@ function Product() {
         {" "}
         {/* margin-top para no tapar la navbar fija */}
 
-         <img
+        <img
             src={ImgTitle}          
             alt="Banner principal"
             className="w-full mx-auto h-auto object-cover"
@@ -18,7 +18,6 @@ function Product() {
 
         <ProductSection />
 
-        <WhatsAppButton />
       </div>
     </div>
   );

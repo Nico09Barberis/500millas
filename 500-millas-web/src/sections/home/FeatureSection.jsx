@@ -30,7 +30,7 @@ const FeatureSection = () => {
           <img
             src={featureImg}
             alt="Feature"
-            className="w-full h-auto object-cover shadow-2xl"
+            className="w-full h-96 object-cover shadow-2xl"
           />
         </div>
       </div>

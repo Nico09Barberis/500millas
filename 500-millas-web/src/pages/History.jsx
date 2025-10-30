@@ -55,7 +55,7 @@ const History = () => {
         </h1>
 
         {/* Secciones */}
-        <div className="flex flex-col gap-12">
+        <div className="flex flex-col gap-6">
           {sections.map((sec, index) => (
             <div
               key={index}
@@ -65,7 +65,7 @@ const History = () => {
             >
               {/* Imagen */}
               <div className="md:w-1/2">
-                <div className="overflow-hidden rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-500">
+                <div className="overflow-hidden rounded-md shadow-xl hover:shadow-2xl transition-shadow duration-500">
                   <img
                     src={sec.image}
                     alt={sec.title}
@@ -93,8 +93,6 @@ const History = () => {
           ))}
         </div>
       </div>
-
-      <WhatsAppButton />
       
     </section>
 

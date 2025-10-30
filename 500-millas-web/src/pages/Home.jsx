@@ -25,7 +25,7 @@ function Home() {
       <img
         src={imgHome1}          
         alt="Banner principal"
-        className="w-full max-w-5xl mx-auto my-0 md:my-12 h-auto object-cover"
+        className="w-full max-w-6xl mx-auto my-0 md:my-12 h-auto object-cover"
       />
 
         <FeatureSection />
@@ -52,7 +52,6 @@ function Home() {
 
         <MapSection />
 
-        <WhatsAppButton />
       </div>
     </div>
   );
