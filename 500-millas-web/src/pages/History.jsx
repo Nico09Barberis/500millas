@@ -44,15 +44,14 @@ const History = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-[#2b1b0e]/70 to-black/60 pointer-events-none"></div>
 
       <div
-        className="relative max-w-4xl p-4 rounded-none md:rounded-lg mx-auto mt-28 md:mt-28 
-        bg-gradient-to-b from-[#f0efe8] via-[#fdf6e3] to-[#e6c78e]"
+        className="relative max-w-4xl p-4 rounded-none md:rounded-sm mx-auto mt-28 bg-[#F9E79F]"
       >
         {/* Título central */}
-        <h1 className="text-4xl md:text-6xl font-bold text-center text-gray-900 tracking-wide mb-20 relative">
+        <h1 className="text-5xl md:text-6xl font-bold text-center text-gray-900 tracking-wide mb-20 relative">
           <span className="font-tangerine-bold relative z-10">
             Nuestra Historia
           </span>
-          <span className="absolute left-1/2 -translate-x-1/2 bottom-[-12px] w-32 h-[4px] bg-gradient-to-r from-[#e6c78e] to-[#d4af37] rounded-full"></span>
+          <span className="absolute left-1/2 -translate-x-1/2 bottom-[-12px] w-32 h-2 bg-gradient-to-r from-[#e6c78e] to-[#d4af37]"></span>
         </h1>
 
         {/* Secciones */}

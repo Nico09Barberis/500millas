@@ -3,6 +3,8 @@ import { useState } from "react";
 import imgProduct from "../../assets/images/alfajor.jpg";
 import imgProductHover from "../../assets/images/logo.png";
 import OrderForm from "../../components/common/OrderForm";
+import { TbLocationShare } from "react-icons/tb";
+import { IoShareSocial } from "react-icons/io5";
 
 const products = [
   {
@@ -19,7 +21,7 @@ const products = [
     id: 2,
     name: "Paquete de alfajores santafesinos",
     description:
-      "Alfajores santafesinos artesanales: tres galletas y dos suaves capas de dulce de leche, bañadas en glase. Ideales para compartir, regalar o disfrutar en cualquier momento.",
+      "Alfajores santafesinos artesanales: tres galletas y dos suaves capas de dulce de leche, bañadas en glase.\n Ideales para compartir, regalar o disfrutar en cualquier momento.",
     presentation: ["paquete sellado", "480 g", "12 unidades"],
     price: 12000,
     img: imgProduct,
@@ -65,56 +67,87 @@ const ProductSection = () => {
           </p>
         </div>
 
-        {products.map((product) => (
-          <div
-            key={product.id}
-            className="w-full max-w-5xl flex flex-col md:flex-row overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-500 group"
-          >
-            {/* Columna izquierda - Texto */}
-            <div className="md:w-1/2 bg-[#F0D98F] p-2 md:p-8 flex flex-col justify-center text-[#3F3732] relative">
-              <h3 className="font-bebas text-4xl md:text-5xl font-extrabold tracking-wide mb-6 relative">
-                {product.name}
-                <span className="absolute left-0 -bottom-2 w-20 h-1 bg-black rounded-full opacity-50"></span>
-              </h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto px-4 py-10">
+          {products.map((product) => (
+            <div
+              key={product.id}
+              className="bg-[#F9E79F] rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-500 overflow-hidden group"
+            >
+              {/* Imagen */}
+              <div className="relative w-full h-64 overflow-hidden">
+                <img
+                  src={product.img}
+                  alt={product.name}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-100 group-hover:opacity-0 absolute top-0 left-0"
+                />
+                <img
+                  src={product.imgHover}
+                  alt={product.name}
+                  className="w-full h-full object-cover transition-opacity duration-500 opacity-0 group-hover:opacity-100"
+                />
+                <span className="absolute top-3 left-3 bg-[#F0D98F] text-[#2E2723] text-xs font-bold py-1 px-3 rounded-full uppercase tracking-wide shadow">
+                  {product.presentation[0]}
+                </span>
+              </div>
 
-              <div className="space-y-3">
-                <p className="font-cormorant-garamond text-lg md:text-xl font-bold">
-                  {product.description}
-                </p>
-                <p className="font-ancois-one text-lg md:text-xl uppercase italic">
-                  Presentación:
-                </p>
-                <p className="font-cormorant-garamond text-lg md:text-xl italic font-bold">
-                  {product.presentation.join(" // ")}
-                </p>
-                <p className="font-ancois-one italic text-xl uppercase">
-                  {product.price.toLocaleString("es-AR", {
-                    style: "currency",
-                    currency: "ARS",
-                  })}
-                </p>
+              {/* Contenido */}
+              <div className="p-5 flex flex-col justify-between h-auto font-caudex">
+                <div>
+                  <h3 className="text-xl font-semibold text-[#2E2723] mb-2">
+                    {product.name}
+                  </h3>
+
+                  <p className="text-[#2E2723] text-md mb-3 line-clamp-4 whitespace-pre-line font-semibold">
+                    {product.description}
+                  </p>
+
+                  <div className="text-md text-[#2E2723] mb-2">
+                    <p className="font-semibold mb-1">Presentación:</p>
+                    <p className="italic font-semibold">
+                      {product.presentation.join(" // ")}
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-center justify-between mt-auto">
+                  <p className="font-oswald font-bold italic text-xl text-[#2E2723] uppercase">
+                    {product.price.toLocaleString("es-AR", {
+                      style: "currency",
+                      currency: "ARS",
+                    })}
+                  </p>
+                  <button
+                    onClick={() => {
+                      if (navigator.share) {
+                        navigator.share({
+                          title: product.name,
+                          text: product.description,
+                          url: window.location.href,
+                        });
+                      } else {
+                        alert(
+                          "La función de compartir no está disponible en este navegador."
+                        );
+                      }
+                    }}
+                    className="p-3 rounded-full hover:bg-[#e6cb7a] transition"
+                    title="Compartir producto"
+                  >
+                    <IoShareSocial className="w-6 h-6 text-[#3F3732]" />
+                  </button>
+                </div>
               </div>
             </div>
-
-            {/* Columna derecha - Img */}
-            <div className="md:w-1/2 bg-white flex items-center justify-center relative overflow-hidden">
-              <img
-                src={product.img}
-                alt={product.name}
-                className="w-full h-auto object-contain transition-opacity duration-500 opacity-100 group-hover:opacity-0 absolute top-0 left-0"
-              />
-              <img
-                src={product.imgHover}
-                alt={product.name}
-                className="w-full h-auto object-contain transition-opacity duration-500 opacity-0 group-hover:opacity-100"
-              />
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
 
         <div className="text-center">
-          <p className="font-dancing text-3xl md:text-4xl font-bold mb-2 text-[#4F4540]">¡Seguimos creando!</p>
-          <p className="font-cormorant-garamond text-lg md:text-xl italic font-bold text-[#7A6E68]">Proximamente nuevos productos...</p>
+          <p className="font-dancing text-3xl md:text-4xl font-bold mb-2 text-[#4F4540]">
+            ¡Seguimos creando!
+          </p>
+          <p className="font-cormorant-garamond text-lg md:text-xl italic font-bold text-[#7A6E68]">
+            Proximamente nuevos productos...
+          </p>
         </div>
 
         {/* Botón para abrir el modal */}
