@@ -3,7 +3,6 @@ import { useState } from "react";
 import imgProduct from "../../assets/images/alfajor.jpg";
 import imgProductHover from "../../assets/images/logo.png";
 import OrderForm from "../../components/common/OrderForm";
-import { TbLocationShare } from "react-icons/tb";
 import { IoShareSocial } from "react-icons/io5";
 
 const products = [

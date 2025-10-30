@@ -29,7 +29,7 @@ function Footer() {
             href="/"
             className="flex items-center gap-2 text-gray-300 hover:text-white mb-1 transition-all duration-300 transform hover:translate-x-2"
           >
-            <IoIosArrowForward className="text-lg text-yellow-300" />
+            <IoIosArrowForward className="text-lg text-[#F9E79F]" />
             Inicio
           </a>
 
@@ -38,7 +38,7 @@ function Footer() {
             href="/productos"
             className="flex items-center gap-2 text-gray-300 hover:text-white mb-1 transition-all duration-300 transform hover:translate-x-2"
           >
-            <IoIosArrowForward className="text-lg text-yellow-300" />
+            <IoIosArrowForward className="text-lg text-[#F9E79F]" />
             Productos
           </a>
 
@@ -47,7 +47,7 @@ function Footer() {
             href="/como-comprar"
             className="flex items-center gap-2 text-gray-300 hover:text-white mb-1 transition-all duration-300 transform hover:translate-x-2"
           >
-            <IoIosArrowForward className="text-lg text-yellow-300" />
+            <IoIosArrowForward className="text-lg text-[#F9E79F]" />
             Cómo comprar
           </a>
         </div>
@@ -125,8 +125,8 @@ function Footer() {
       </div>
 
       {/* Línea inferior */}
-      <div className="bg-black mt-10 py-4 text-center text-gray-300 text-sm">
-        © {new Date().getFullYear()} Mi Empresa - Todos los derechos reservados
+      <div className="bg-black mt-10 py-4 text-cente text-gray-300 font-sans text-sm">
+         © Copyright {new Date().getFullYear()} 500 millas | Todos los Derechos Reservados | All Rights Reserved
       </div>
     </footer>
   );

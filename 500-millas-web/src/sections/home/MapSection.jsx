@@ -8,23 +8,23 @@ const MapSection = () => {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-8">
         {/* Contenido izquierda */}
         <article className="md:w-1/3 font-caudex font-semibold flex flex-col items-center md:items-start justify-center text-center md:text-left">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#E6C78E] mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#F9E79F] mb-6">
             Nuestra ubicación
           </h2>
 
           {/* Dirección */}
-          <p className="flex items-center gap-3 text-[#E6C78E] mb-3">
+          <p className="flex items-center gap-3 text-[#F9E79F] mb-3">
             <FaHouse
-              className="text-[#E6C78E] text-xl shrink-0"
+              className="text-[#F9E79F] text-xl shrink-0"
               aria-label="Dirección"
             />
             Los Robles 85, Bella Italia, Santa Fe
           </p>
 
           {/* Teléfono */}
-          <p className="flex items-center gap-3 text-[#E6C78E] mb-3">
+          <p className="flex items-center gap-3 text-[#F9E79F] mb-3">
             <FaSquarePhone
-              className="text-[#E6C78E] text-xl shrink-0"
+              className="text-[#F9E79F] text-xl shrink-0"
               aria-label="Teléfono"
             />
             <a href="tel:03492582838" className="hover:underline">
@@ -33,9 +33,9 @@ const MapSection = () => {
           </p>
 
           {/* Email (si lo usas) */}
-          <p className="flex items-center gap-3 text-[#E6C78E] mb-6">
+          <p className="flex items-center gap-3 text-[#F9E79F] mb-6">
             <MdEmail
-              className="text-[#E6C78E] text-xl shrink-0"
+              className="text-[#F9E79F] text-xl shrink-0"
               aria-label="Correo electrónico"
             />
             <a
@@ -46,7 +46,7 @@ const MapSection = () => {
             </a>
           </p>
 
-          <p className="text-[#E6C78E] mb-6">
+          <p className="text-[#F9E79F] mb-6">
             Vení a visitarnos o contactanos para más información.
           </p>
 
@@ -55,7 +55,7 @@ const MapSection = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Abrir ubicación en Google Maps"
-            className="px-6 py-3 bg-[#1A1712] hover:bg-[#0E0C09] border-2 border-[#E6C78E] text-white hover:scale-105 transition"
+            className="px-6 py-3 bg-[#1A1712] hover:bg-[#0E0C09] border-2 border-[#F9E79F] text-white hover:scale-105 transition"
           >
             Abrir en Google Maps
           </a>

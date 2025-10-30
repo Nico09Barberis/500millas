@@ -6,9 +6,10 @@ const HowToBuy = () => {
       <div className="max-w-4xl mx-auto flex flex-col gap-12">
         {/* Título */}
         <div className="text-center">
-          <h2 className="font-ancois-one uppercase text-4xl md:text-5xl font-semibold text-[#4F4540] mb-4 drop-shadow-sm">
+          <h2 className="font-ancois-one uppercase text-3xl md:text-5xl text-[#4F4540] mb-2 drop-shadow-sm">
             Cómo comprar
           </h2>
+          <div className="w-32 h-2 bg-gradient-to-r from-[#e6c78e] to-[#d4af37] mx-auto mb-4"></div>
           <p className="font-cormorant-garamond font-bold italic text-xl md:text-2xl text-[#4F4540]">
             Elegí tus productos favoritos y realizá tu pedido de forma rápida y sencilla.
           </p>

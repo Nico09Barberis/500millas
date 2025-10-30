@@ -29,7 +29,7 @@ const ContactSection = () => {
         </div>
 
         {/* Contenido derecha */}
-        <div className="md:w-1/3 w-full bg-[#E6C977] flex flex-col p-4 py-12 md:py-4 sm:p-6 text-center md:text-left md:justify-center">
+        <div className="md:w-1/3 w-full bg-[#F9E79F] flex flex-col p-4 py-12 md:py-4 sm:p-6 text-center md:text-left md:justify-center">
           <h2 className="font-ancois-one text-3xl md:text-4xl font-bold text-[#3B2F2F] mb-4">
             ¿Querés vender nuestros productos?
           </h2>
@@ -49,7 +49,7 @@ const ContactSection = () => {
           </a>
 
           {/* Lista de items */}
-          <ul className="space-y-5 mt-6">
+          <ul className="space-y-5 mt-6 flex flex-col items-center md:items-start">
             {items.map((item, index) => {
               const Icon = item.icon; // guardamos el componente del icono
               return (

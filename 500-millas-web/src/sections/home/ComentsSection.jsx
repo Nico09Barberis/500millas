@@ -60,7 +60,7 @@ const CommentsSection = ({
       {/* Sección de 4 columnas con iconos */}
       <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-4 gap-8 font-caudex text-center px-4">
         {comments.map((text, i) => (
-          <div key={i} className="flex flex-col items-center">
+          <div key={i} className="flex flex-col items-center max-w-sm md:max-w-full mx-auto">
             <RiDoubleQuotesR
               className="text-white text-5xl mb-3"
               aria-hidden="true"

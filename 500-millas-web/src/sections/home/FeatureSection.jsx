@@ -2,7 +2,7 @@ import featureImg from "../../assets/images/alfajor.jpg"; // reemplazá con tu i
 
 const FeatureSection = () => {
   return (
-    <section className="w-full bg-[#E6C977] py-12 px-2">
+    <section className="w-full bg-[#F9E79F] py-12 px-2">
       <div className="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center justify-center gap-8 px-4 md:px-6">
         {/* Texto */}
         <div className="md:w-1/2 flex flex-col justify-center items-center md:items-start text-center md:text-left">

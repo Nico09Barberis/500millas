@@ -111,21 +111,21 @@ function Navbar() {
             <Link
               to="/"
               onClick={() => setIsOpen(false)}
-              className="block text-gray-500 hover:text-gray-700 hover:bg-[#E0F7FA] font-ancois-one uppercase rounded-xl py-1 px-2 text-lg"
+              className="block text-gray-500 hover:text-gray-700 hover:bg-[#F9E79F] font-ancois-one uppercase rounded-md py-1 px-2 text-lg"
             >
               home
             </Link>
             <Link
               to="/historia"
               onClick={() => setIsOpen(false)}
-              className="block text-gray-500 hover:text-gray-700 hover:bg-[#E0F7FA] font-ancois-one uppercase rounded-xl py-1 px-2 text-lg"
+              className="block text-gray-500 hover:text-gray-700 hover:bg-[#F9E79F] font-ancois-one uppercase rounded-md py-1 px-2 text-lg"
             >
               Nuestra Historia
             </Link>
             <Link
               to="/productos"
               onClick={() => setIsOpen(false)}
-              className="block text-gray-500 hover:text-gray-700 hover:bg-[#E0F7FA] font-ancois-one uppercase rounded-xl py-1 px-2 text-lg"
+              className="block text-gray-500 hover:text-gray-700 hover:bg-[#F9E79F] font-ancois-one uppercase rounded-md py-1 px-2 text-lg"
             >
               Productos
             </Link>
@@ -133,7 +133,7 @@ function Navbar() {
             <Link
               to="/como-comprar"
               onClick={() => setIsOpen(false)}
-              className="block text-gray-500 hover:text-gray-700 hover:bg-[#E0F7FA] font-ancois-one uppercase rounded-xl py-1 px-2 text-lg"
+              className="block text-gray-500 hover:text-gray-700 hover:bg-[#F9E79F] font-ancois-one uppercase rounded-md py-1 px-2 text-lg"
             >
               Como comprar
             </Link>
