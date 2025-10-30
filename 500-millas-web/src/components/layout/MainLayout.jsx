@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Navbar from "../common/Navbar";
+import Navbar from "../navigation/Navbar";
 import Footer from "../navigation/Footer";
 import WhatsAppButton from "../common/WhatsAppButton";
 import ScrollToTopButton from "../common/ScrollTopButton";

@@ -4,7 +4,7 @@ import { CiMoneyCheck1 } from "react-icons/ci";
 
 const DataSection = () => {
   return (
-    <section className="py-6 px-6 my-12 max-w-6xl mx-auto bg-gray-100">
+    <section className="py-6 px-6 my-0 md:my-12 max-w-6xl mx-auto bg-gray-100">
       <div className="flex flex-col lg:flex-row gap-8">
         
         {/* Columna 1 */}

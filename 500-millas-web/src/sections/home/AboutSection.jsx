@@ -2,10 +2,10 @@ import logo from "../../assets/images/logo.png";
 
 const AboutSection = () => {
   return (
-    <section className="my-12">
+    <section className="my-6 md:my-12">
       <div className="relative overflow-hidden bg-white">
         {/* Contenido */}
-        <div className="relative text-center w-full max-w-4xl mx-auto px-4 py-12">
+        <div className="relative text-center w-full max-w-4xl mx-auto px-4 py-6">
           {/* Título */}
           <h2 className="font-tangerine-regular text-5xl md:text-6xl font-bold text-black mb-4">
             Quiénes Somos

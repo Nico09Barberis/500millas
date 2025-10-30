@@ -19,37 +19,36 @@ function Footer() {
           </Link>
         </div>
 
-        {/* Columna central: Links */}
         {/* Columna central: Links de navegación */}
         <div className="flex flex-col items-center md:items-start gap-3">
           <h3 className="font-bold uppercase mb-3 text-lg">Navegación</h3>
 
           {/* Inicio */}
-          <a
-            href="/"
+          <Link
+            to="/"
             className="flex items-center gap-2 text-gray-300 hover:text-white mb-1 transition-all duration-300 transform hover:translate-x-2"
           >
             <IoIosArrowForward className="text-lg text-[#F9E79F]" />
             Inicio
-          </a>
+          </Link>
 
           {/* Productos */}
-          <a
-            href="/productos"
+          <Link
+            to="/productos"
             className="flex items-center gap-2 text-gray-300 hover:text-white mb-1 transition-all duration-300 transform hover:translate-x-2"
           >
             <IoIosArrowForward className="text-lg text-[#F9E79F]" />
             Productos
-          </a>
+          </Link>
 
           {/* Cómo comprar */}
-          <a
-            href="/como-comprar"
+          <Link
+            to="/como-comprar"
             className="flex items-center gap-2 text-gray-300 hover:text-white mb-1 transition-all duration-300 transform hover:translate-x-2"
           >
             <IoIosArrowForward className="text-lg text-[#F9E79F]" />
             Cómo comprar
-          </a>
+          </Link>
         </div>
 
         {/* Columna derecha: Contacto / Redes */}
@@ -118,7 +117,7 @@ function Footer() {
               rel="noopener noreferrer"
               className="w-10 h-10 flex items-center justify-center text-gray-400 hover:bg-gray-600 hover:text-white transition-shadow shadow-md hover:shadow-xl"
             >
-              <FaWhatsapp size={24}/>
+              <FaWhatsapp size={24} />
             </a>
           </div>
         </div>
@@ -126,7 +125,8 @@ function Footer() {
 
       {/* Línea inferior */}
       <div className="bg-black mt-10 py-4 px-2 text-center text-gray-300 font-sans text-sm">
-         © Copyright {new Date().getFullYear()} 500 millas | Todos los Derechos Reservados | All Rights Reserved
+        © Copyright {new Date().getFullYear()} 500 millas | Todos los Derechos
+        Reservados | All Rights Reserved
       </div>
     </footer>
   );

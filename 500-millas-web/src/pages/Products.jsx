@@ -1,6 +1,5 @@
-import WhatsAppButton from "../components/common/WhatsAppButton";
+import ImgSection from "../sections/product/ImgSection";
 import ProductSection from "../sections/product/ProductSection";
-import ImgTitle from "../assets/images/imgTitle.png";
 
 function Product() {
 
@@ -10,11 +9,7 @@ function Product() {
         {" "}
         {/* margin-top para no tapar la navbar fija */}
 
-        <img
-            src={ImgTitle}          
-            alt="Banner principal"
-            className="w-full mx-auto h-auto object-cover"
-          />
+        <ImgSection />
 
         <ProductSection />
 

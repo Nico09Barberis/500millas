@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/logo.png";
+import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -137,6 +138,29 @@ function Navbar() {
             >
               Como comprar
             </Link>
+
+            <div className="flex items-start gap-2">
+
+            {/* Instagram */}
+            <a
+              href="https://www.instagram.com/500millas__/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 flex items-center justify-center text-gray-500 hover:text-gray-700 hover:bg-[#F9E79F] rounded-md transition-all duration-300"
+            >
+              <FaInstagram size={24} />
+            </a>
+
+            {/* WhatsApp */}
+            <a
+              href="https://wa.me/5493492582838"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 flex items-center justify-center text-gray-500 hover:text-gray-700 hover:bg-[#F9E79F] rounded-md transition-all duration-300"
+            >
+              <FaWhatsapp size={24} />
+            </a>
+              </div>
           </div>
         </div>
       </div>
