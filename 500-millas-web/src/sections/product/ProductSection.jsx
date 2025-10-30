@@ -57,7 +57,7 @@ const ProductSection = () => {
           <h2 className="text-5xl font-tangerine-regular font-bold mb-6">
             Sabías que ...
           </h2>
-          <p className="font-cormorant-garamond text-2xl font-semibold text-gray-900">
+          <p className="font-caudex italic text-xl font-semibold text-gray-900">
             Elaboramos productos 100 % artesanales, basados en recetas propias
             que se han perfeccionado con los años. Seleccionamos las mejores
             materias primas para ofrecer opciones saludables para tu día a día y

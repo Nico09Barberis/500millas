@@ -6,10 +6,10 @@ const FeatureSection = () => {
       <div className="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center justify-center gap-8 px-4 md:px-6">
         {/* Texto */}
         <div className="md:w-1/2 flex flex-col justify-center items-center md:items-start text-center md:text-left">
-          <h2 className="text-3xl md:text-5xl lg:text-6xl font-ancois-one font-bold text-[#3B2F2F] mb-4">
+          <h2 className="text-3xl md:text-5xl lg:text-6xl font-ancois-one uppercase font-bold text-[#3B2F2F] mb-4">
             Alfajor Santafesino
           </h2>
-          <p className="font-cormorant-garamond font-bold text-lg md:text-2xl text-justify text-[#3B2F2F] mb-6">
+          <p className="font-caudex font-bold text-lg md:text-xl text-justify text-[#3B2F2F] mb-6">
             Elaborado de manera artesanal, combina tres capas finas
             de galletas suaves y ligeramente crujientes, intercaladas con dos
             abundantes capas de dulce de leche de textura cremosa y sabor

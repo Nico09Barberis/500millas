@@ -56,7 +56,7 @@ const History = () => {
         </h1>
 
         {/* Secciones */}
-        <div className="flex flex-col gap-24">
+        <div className="flex flex-col gap-12">
           {sections.map((sec, index) => (
             <div
               key={index}
@@ -77,16 +77,16 @@ const History = () => {
 
               {/* Texto */}
               <div className="md:w-1/2 p-6 text-center md:text-start">
-                <h2 className="font-rowdies-bold text-2xl md:text-3xl text-gray-900 mb-6">
+                <h2 className="font-caudex text-2xl md:text-3xl font-bold text-gray-900 mb-6">
                   {sec.title}
                 </h2>
-                <p className="font-cormorant-garamond font-semibold text-lg text-gray-800 leading-relaxed mb-4">
+                <p className="font-caudex font-semibold text-lg text-gray-800 leading-relaxed mb-4">
                   {sec.text}
                 </p>
-                <p className="font-cormorant-garamond font-semibold text-lg text-gray-800 leading-relaxed mb-4">
+                <p className="font-caudex font-semibold text-lg text-gray-800 leading-relaxed mb-4">
                   {sec.text2}
                 </p>
-                <p className="font-cormorant-garamond font-semibold text-lg text-gray-800 leading-relaxed">
+                <p className="font-caudex font-semibold text-lg text-gray-800 leading-relaxed">
                   {sec.text3}
                 </p>
               </div>

@@ -33,7 +33,7 @@ const ContactSection = () => {
           <h2 className="font-ancois-one text-3xl md:text-4xl font-bold text-[#3B2F2F] mb-4">
             ¿Querés vender nuestros productos?
           </h2>
-          <p className="font-ancois-one text-xl md:text-2xl text-[#4F4540] mb-6">
+          <p className="font-caudex font-semibold text-lg md:text-xl text-[#4F4540] mb-6">
             Si sos distribuidor o tenés un comercio, hacé click en “contactanos”
             y comunicate con nosotros.
           </p>
@@ -55,7 +55,7 @@ const ContactSection = () => {
               return (
                 <li
                   key={index}
-                  className="font-ancois-one flex items-center gap-2 font-extralight text-lg text-[#4F4540]"
+                  className="font-caudex font-semibold flex items-center gap-2 text-lg text-[#4F4540]"
                 >
                   <Icon className="text-[#4F4540]" aria-hidden="true" />
                   {item.text}

@@ -9,7 +9,7 @@ const ParallaxSection = () => {
 
       {/* Contenido abajo */}
       <div className="relative text-center w-full max-w-4xl mx-auto bg-gradient-to-b from-[#C19A6B] to-white text-[#4F4540] px-6 py-12">
-        <h2 className="font-ancois-one text-3xl md:text-5xl font-bold mb-4">
+        <h2 className="font-caudex text-3xl md:text-5xl font-bold mb-4">
           Alfajores 500 Millas
         </h2>
         <p className="font-dancing text-3xl max-w-2xl font-bold mx-auto mb-6">

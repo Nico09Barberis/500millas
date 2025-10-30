@@ -7,7 +7,7 @@ const MapSection = () => {
     <section className="py-16 px-6 bg-[#121212]">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-8">
         {/* Contenido izquierda */}
-        <article className="md:w-1/3 font-ancois-one flex flex-col items-center md:items-start justify-center text-center md:text-left">
+        <article className="md:w-1/3 font-caudex font-semibold flex flex-col items-center md:items-start justify-center text-center md:text-left">
           <h2 className="text-3xl md:text-4xl font-bold text-[#E6C78E] mb-6">
             Nuestra ubicación
           </h2>

@@ -6,10 +6,10 @@ const HowToBuy = () => {
       <div className="max-w-4xl mx-auto flex flex-col gap-12">
         {/* Título */}
         <div className="text-center">
-          <h2 className="font-bebas uppercase text-4xl md:text-5xl font-bold text-[#2C1810] mb-4 drop-shadow-sm">
+          <h2 className="font-ancois-one uppercase text-4xl md:text-5xl font-semibold text-[#4F4540] mb-4 drop-shadow-sm">
             Cómo comprar
           </h2>
-          <p className="font-cormorant-garamond font-bold italic text-xl md:text-2xl text-gray-700">
+          <p className="font-cormorant-garamond font-bold italic text-xl md:text-2xl text-[#4F4540]">
             Elegí tus productos favoritos y realizá tu pedido de forma rápida y sencilla.
           </p>
         </div>
@@ -51,16 +51,16 @@ const HowToBuy = () => {
               className={`bg-white/90 hover:bg-white transition-all duration-300 rounded-3xl shadow-xl p-8 flex flex-col items-center text-center border-l-8 ${step.color} hover:scale-[1.02]`}
             >
               <div className="text-5xl mb-4">{step.icon}</div>
-              <h3 className="font-bebas text-2xl font-bold text-[#2C1810] mb-2 uppercase tracking-wider">
+              <h3 className="font-ancois-one text-2xl font-bold text-[#4F4540] mb-2 uppercase tracking-wider">
                 {idx + 1}. {step.title}
               </h3>
-              <p className="font-cormorant-garamond font-bold text-gray-700 text-xl leading-relaxed">{step.description}</p>
+              <p className="font-caudex font-bold text-gray-700 text-lg leading-relaxed">{step.description}</p>
             </div>
           ))}
         </div>
 
         {/* Footer */}
-        <p className="text-center text-gray-800 text-lg mt-6">
+        <p className="text-center font-caudex italic font-semibold text-gray-800 text-lg mt-6">
           ¡Así de simple! Tu pedido llegará rápido y seguro.
         </p>
       </div>

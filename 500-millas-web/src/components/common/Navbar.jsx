@@ -152,7 +152,7 @@ function Navbar() {
           <Link
             key={item.to}
             to={item.to}
-            className="relative text-gray-700 hover:text-gray-900 pb-1
+            className="relative text-gray-700 hover:text-gray-900
               border-b-2 border-transparent hover:border-gray-900
               transition-all duration-200"
           >
