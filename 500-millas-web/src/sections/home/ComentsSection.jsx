@@ -50,7 +50,7 @@ const CommentsSection = ({
             </p>
 
             {/* Texto pequeño */}
-            <p className="font-cormorant-garamond font-semibold text-gray-300 text-xs md:text-sm max-w-md mx-auto mb-4">
+            <p className="font-cormorant-garamond font-semibold text-gray-300 text-sm max-w-md mx-auto mb-4">
               12 unid | 560 g | sabor único
             </p>
           </div>
