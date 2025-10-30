@@ -27,8 +27,8 @@ const MapSection = () => {
               className="text-[#F9E79F] text-xl shrink-0"
               aria-label="Teléfono"
             />
-            <a href="tel:03492582838" className="hover:underline">
-              03492 582838
+            <a href="tel:5493492684944" className="hover:underline">
+              +54 9 3492684944
             </a>
           </p>
 

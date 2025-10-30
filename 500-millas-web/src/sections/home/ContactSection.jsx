@@ -6,7 +6,7 @@ import { MdEmail } from "react-icons/md";
 const ContactSection = () => {
   // Cada item ahora tiene un icono y un texto
   const items = [
-    { icon: FaSquarePhone, text: "Llamanos al 3492502030" },
+    { icon: FaSquarePhone, text: "Llamanos al +54 9 3492684944" },
     { icon: MdEmail, text: "alfajores500millas@gmail.com" },
     { icon: FaHouse, text: "Visitanos en nuestro local" },
     { icon: FaInstagram, text: "Seguinos en instagram @500millas__" },

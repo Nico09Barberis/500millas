@@ -40,7 +40,7 @@ const FormSection = () => {
             Llenar solicitud
           </a>
           <a
-            href="https://wa.me/5493492582838?text=Hola!%20Quiero%20más%20información%20sobre%20los%20alfajores."
+            href="https://wa.me/5493492684944?text=Hola!%20Quiero%20más%20información%20sobre%20los%20alfajores."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-6 py-3 bg-[#E5E5E5] hover:bg-[#8DD13E] font-ancois-one uppercase font-semibold text-black hover:text-white text-center hover:scale-110 transition-all duration-100"
