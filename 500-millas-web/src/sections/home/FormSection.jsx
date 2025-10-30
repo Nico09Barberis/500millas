@@ -5,7 +5,7 @@ const FormSection = () => {
     "https://docs.google.com/forms/d/e/1FAIpQLSdfrTwVrychl5dgV9xvE3mY_S5Bk0NNpUcgeF3R4ACttTFJhw/viewform?usp=header";
 
   return (
-    <section className="relative w-full h-[500px] overflow-hidden">
+    <section className="relative w-full py-12 overflow-hidden">
       {/* Imagen de fondo */}
       <img
         src={bgImage}
